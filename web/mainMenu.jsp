@@ -18,10 +18,14 @@
               </form>
           </span>
     <span>
-              <img src="${pageContext.request.contextPath}/assets/icons/explore.png">
-              <img src="${pageContext.request.contextPath}/assets/icons/profile.png">
-              <a href="${pageContext.request.contextPath}/postEdit/imageSelectPage.jsp">
-                  <img src="${pageContext.request.contextPath}/assets/icons/upload.png">
-              </a>
-          </span>
+        <a href="${pageContext.request.contextPath}/index.jsp">
+            <img src="${pageContext.request.contextPath}/assets/icons/explore.png">
+        </a>
+        <a href="${pageContext.request.contextPath}/logout.jsp">
+            <img src="${pageContext.request.contextPath}/assets/icons/profile.png">
+        </a>
+        <a href="${pageContext.request.contextPath}/postEdit/imageSelectPage.jsp">
+            <img src="${pageContext.request.contextPath}/assets/icons/upload.png">
+        </a>
+    </span>
 </div>
