@@ -6,11 +6,11 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.concurrent.ExecutionException;
 
-public class DAO{
+public class memberDAO {
     DBConnect dbconnect = null;
     String sql = "";
 
-    public DAO() {
+    public memberDAO() {
         dbconnect = new DBConnect();
     }
 

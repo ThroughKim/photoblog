@@ -16,8 +16,8 @@
     <jsp:setProperty name="dto" property="*" />     <%--모든 값을 DTO에 집어넣음, 후에 Getter메소드로 호출가능--%>
 
 <%
-    DAO dao = new DAO();
-    dao.insertMember(dto);
+    memberDAO memberDao = new memberDAO();
+    memberDao.insertMember(dto);
 %>
 
 <script>

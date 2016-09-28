@@ -6,7 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
-<%@ page import="dbControl.DAO" %>
+<%@ page import="dbControl.memberDAO" %>
 
 <%
     request.setCharacterEncoding("UTF-8");
@@ -14,8 +14,8 @@
     String email = request.getParameter("email");
     String password = request.getParameter("password");
 
-    DAO dao = new DAO();
-    int check = dao.userCheck(email, password);
+    memberDAO memberDao = new memberDAO();
+    int check = memberDao.userCheck(email, password);
 
     if(check==1){
         //인증성공
