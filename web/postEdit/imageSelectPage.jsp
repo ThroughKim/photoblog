@@ -9,12 +9,12 @@
 <html>
 <head>
     <title>이미지 선택</title>
-    <link href="css/css_main.css" rel="stylesheet" type="text/css">
+    <link href="${pageContext.request.contextPath}/assets/css/css_main.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
 </head>
 <body>
 
-<jsp:include page="mainMenu.jsp" flush="false"></jsp:include>
+<jsp:include page="${pageContext.request.contextPath}/mainMenu.jsp" flush="false"></jsp:include>
 
 <div class="content-area">
     <div class="upload-box">

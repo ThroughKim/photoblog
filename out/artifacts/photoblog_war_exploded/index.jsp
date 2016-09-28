@@ -9,7 +9,7 @@
 <html>
 <head>
   <title>Insta</title>
-  <link href="css/css_main.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/css_main.css" rel="stylesheet" type="text/css">
   <meta charset="utf-8">
 </head>
 <body>
@@ -19,13 +19,13 @@
 <div class="content-area">
   <div class="post-box">
     <p class="post-top">
-      <img src="images/profile_img.jpg" class="post-profile-img">
+      <img src="${pageContext.request.contextPath}/images/profile_img.jpg" class="post-profile-img">
       <span class="post-top-name">
                   Throughkim
               </span>
     </p>
     <p>
-      <img src="images/sample.png" class="post-img">
+      <img src="${pageContext.request.contextPath}/images/sample.png" class="post-img">
     </p>
     <div class="post-content">
       <p class="post-like">
@@ -47,7 +47,7 @@
       </p>
       <hr>
       <div class="post-input">
-        <img src="icons/like_colored.png">
+        <img src="${pageContext.request.contextPath}/assets/icons/like_colored.png">
         <form>
           <input type="text" placeholder="댓글 달기..." class="post-input-comment-box comment-placeholder">
         </form>

@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Insta</title>
-    <link href="css/css_main.css" rel="stylesheet" type="text/css">
+    <link href="${pageContext.request.contextPath}/assets/css/css_main.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
 </head>
 <body>
@@ -29,7 +29,7 @@
             <p>
                 아직 Insta의 회원이 아니신가요?
             </p>
-            <a href="registerPage.jsp">회원가입</a>
+            <a href="../registration/registerPage.jsp">회원가입</a>
         </div>
     </div>
 </div>

@@ -8,7 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="main-menu-bar">
           <span>
-              <img src="icons/logo.png" class="logo-image">
+              <a href="${pageContext.request.contextPath}/index.jsp">
+                  <img src="${pageContext.request.contextPath}/assets/icons/logo.png" class="logo-image">
+              </a>
           </span>
     <span>
               <form>
@@ -16,8 +18,10 @@
               </form>
           </span>
     <span>
-              <img src="icons/explore.png">
-              <img src="icons/profile.png">
-              <a href="imageSelectPage.jsp"><img src="icons/upload.png"></a>
+              <img src="${pageContext.request.contextPath}/assets/icons/explore.png">
+              <img src="${pageContext.request.contextPath}/assets/icons/profile.png">
+              <a href="${pageContext.request.contextPath}/postEdit/imageSelectPage.jsp">
+                  <img src="${pageContext.request.contextPath}/assets/icons/upload.png">
+              </a>
           </span>
 </div>

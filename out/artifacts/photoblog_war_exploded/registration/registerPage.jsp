@@ -9,8 +9,8 @@
 <html>
 <head>
     <title>회원가입</title>
-    <link href="css/css_main.css" rel="stylesheet" type="text/css">
-    <script src="js/main_js.js" type=text/javascript></script>
+    <link href="../assets/css/css_main.css" rel="stylesheet" type="text/css">
+    <script src="../assets/js/main_js.js" type=text/javascript></script>
     <meta charset="utf-8">
 </head>
 <body>
