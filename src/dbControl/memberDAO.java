@@ -4,18 +4,17 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.concurrent.ExecutionException;
 
-public class memberDAO {
+public class MemberDAO {
     DBConnect dbconnect = null;
     String sql = "";
 
-    public memberDAO() {
+    public MemberDAO() {
         dbconnect = new DBConnect();
     }
 
     //회원가입 기능 구현
-    public void insertMember(memberDTO dto) throws Exception{
+    public void insertMember(MemberDTO dto) throws Exception{
         Connection con = dbconnect.getConnection();
         PreparedStatement pstmt = null;
 
@@ -66,5 +65,57 @@ public class memberDAO {
         }
         return x;
     }
+
+    // 프사 얻어오기
+    public String getProfileImg(int user_id)throws Exception{
+        Connection  con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        String profileImg = null;
+
+        try{
+            sql = "SELECT profile_img from insta.members WHERE id = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, user_id);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                profileImg = rs.getString("profile_img");
+            }else{
+                profileImg = "/images/no_profile_img.jpg";
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return profileImg;
+    }
+
+    public String getUsername(int user_id)throws Exception{
+        Connection  con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        String nickName = null;
+
+        try{
+            sql = "SELECT username from insta.members WHERE id = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, user_id);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                nickName = rs.getString("username");
+            }else{
+                nickName = "username_error";
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return nickName;
+    }
+
 }
 

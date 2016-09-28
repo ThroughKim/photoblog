@@ -3,16 +3,16 @@ package dbControl;
 /**
  * Created by throughkim on 2016. 9. 28..
  */
-public class memberDTO {
+public class MemberDTO {
     private String nick;
     private String email;
     private String password;
 
-    public memberDTO(){
+    public MemberDTO(){
 
     }
 
-    public memberDTO(String nick, String email, String password){
+    public MemberDTO(String nick, String email, String password){
         this.nick = nick;
         this.email = email;
         this.password = password;

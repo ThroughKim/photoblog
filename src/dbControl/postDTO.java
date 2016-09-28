@@ -3,59 +3,59 @@ package dbControl;
 /**
  * Created by throughkim on 2016. 9. 28..
  */
-public class postDTO {
-    private int post_id;
-    private String post_image;
-    private String post_content;
-    private int post_user_id;
+public class PostDTO {
+    private int id;
+    private String image;
+    private String content;
+    private int user_id;
     private int cnt_like;
     private int cnt_comment;
     private String create_datetime;
 
-    public postDTO(){
+    public PostDTO(){
 
     }
 
-    public postDTO(int post_id, String post_image, String post_content,
-                   int post_user_id, int cnt_like, int cnt_comment, String create_datetime){
-        this.post_id = post_id;
-        this.post_image = post_image;
-        this.post_content = post_content;
-        this.post_user_id = post_user_id;
+    public PostDTO(int id, String image, String content,
+                   int user_id, int cnt_like, int cnt_comment, String create_datetime){
+        this.id = id;
+        this.image = image;
+        this.content = content;
+        this.user_id = user_id;
         this.cnt_like = cnt_like;
         this.cnt_comment = cnt_comment;
         this.create_datetime = create_datetime;
     }
-    public int getPost_id() {
-        return post_id;
+    public int getId() {
+        return id;
     }
 
-    public void setPost_id(int post_id) {
-        this.post_id = post_id;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getPost_image() {
-        return post_image;
+    public String getImage() {
+        return image;
     }
 
-    public void setPost_image(String post_image) {
-        this.post_image = post_image;
+    public void setImage(String image) {
+        this.image = image;
     }
 
-    public String getPost_content() {
-        return post_content;
+    public String getContent() {
+        return content;
     }
 
-    public void setPost_content(String post_content) {
-        this.post_content = post_content;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public int getPost_user_id() {
-        return post_user_id;
+    public int getUser_id() {
+        return user_id;
     }
 
-    public void setPost_user_id(int post_user_id) {
-        this.post_user_id = post_user_id;
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
     }
 
     public int getCnt_like() {

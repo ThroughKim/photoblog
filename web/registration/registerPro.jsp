@@ -12,11 +12,11 @@
     request.setCharacterEncoding("UTF-8");
 %>
 
-<jsp:useBean id="dto" class="dbControl.memberDTO" />
+<jsp:useBean id="dto" class="dbControl.MemberDTO" />
     <jsp:setProperty name="dto" property="*" />     <%--모든 값을 DTO에 집어넣음, 후에 Getter메소드로 호출가능--%>
 
 <%
-    memberDAO memberDao = new memberDAO();
+    MemberDAO memberDao = new MemberDAO();
     memberDao.insertMember(dto);
 %>
 
