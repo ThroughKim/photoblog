@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<jsp:include page="../mainMenu.jsp" flush="false"></jsp:include>
+<jsp:include page="${pageContext.request.contextPath/mainMenu.jsp" flush="false"></jsp:include>
 
 <div class="content-area">
     <div class="upload-box">

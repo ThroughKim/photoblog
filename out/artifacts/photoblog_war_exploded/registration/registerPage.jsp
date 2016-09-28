@@ -9,8 +9,8 @@
 <html>
 <head>
     <title>회원가입</title>
-    <link href="../assets/css/css_main.css" rel="stylesheet" type="text/css">
-    <script src="../assets/js/main_js.js" type=text/javascript></script>
+    <link href="${pageContext.request.contextPath}/assets/css/css_main.css" rel="stylesheet" type="text/css">
+    <script src="${pageContext.request.contextPath}/assets/js/main_js.js" type=text/javascript></script>
     <meta charset="utf-8">
 </head>
 <body>
@@ -19,7 +19,7 @@
         <h1>회원가입</h1>
         <p>Insta에 오신것을 환영합니다. 간단한 절차를 통해 회원가입 하셔서 저희 서비스를 이용해보세요.</p>
         <hr>
-        <form action="registerPage.jsp" method="post" onsubmit="return registerFormCheck();">
+        <form action="registerAction.jsp" method="post" onsubmit="return registerFormCheck();">
             <br>
             <p>
                 <label for="nick">Nick Name </label><br>
@@ -34,10 +34,7 @@
                 <label for="password">Password </label><br>
                 <input type="password" name="password" placeholder="********" id="password">
             </p>
-            <p>
-                <label for="password-chk">Password-check </label><br>
-                <input type="password" name="password-chk" placeholder="********" id="password-chk">
-            </p><br>
+            <br>
             <p>
                 <input type="submit" id="register-button" value="회원가입">
                 <input type="button" id="register-button" value="취소">
