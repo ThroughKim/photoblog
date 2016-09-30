@@ -53,4 +53,28 @@ public class CommentDAO {
         }
         return list;
     }
+
+    //댓글 입력하기
+    public int insertComment(int post_id, int user_id, String content){
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        int check = 0;
+
+        try {
+            sql = "INSERT INTO insta.comment(USER_ID, POST_ID, CONTENT) VALUES(?,?,?)";
+            pstmt = con.prepareStatement(sql);
+
+            pstmt.setInt(1, user_id);
+            pstmt.setInt(2, post_id);
+            pstmt.setString(3, content);
+
+            pstmt.executeUpdate();
+            check = 1;
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return check;
+    }
 }

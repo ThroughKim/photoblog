@@ -94,7 +94,7 @@ public class MemberDAO {
 
     //User Name 얻어오기
     public String getUsername(int user_id)throws Exception{
-        Connection  con = dbconnect.getConnection();
+        Connection con = dbconnect.getConnection();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         String nickName = null;
@@ -116,6 +116,31 @@ public class MemberDAO {
             DBClose.close(con, pstmt);
         }
         return nickName;
+    }
+
+    public int getUser_id(String user_email)throws Exception{
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        int user_id = 0;
+
+        try{
+            sql = "SELECT id from insta.members WHERE email = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setString(1, user_email);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                user_id = rs.getInt("id");
+            }else{
+                user_id = 0;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return user_id;
     }
 
 }

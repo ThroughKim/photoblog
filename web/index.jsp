@@ -79,8 +79,10 @@
             <hr>
             <div class="post-input">
                 <img src="${pageContext.request.contextPath}/assets/icons/like_colored.png">
-                <form>
-                    <input type="text" placeholder="댓글 달기..." class="post-input-comment-box comment-placeholder">
+                <form action="commentPro.jsp" method="post">
+                    <input type="text" placeholder="댓글 달기..." class="post-input-comment-box comment-placeholder" name="content">
+                    <input type="hidden" name="post_id" value="<%=post.getId()%>">
+                    <input type="hidden" name="user_id" value="<%=memDao.getUser_id((String)session.getAttribute("memEmail"))%>">
                 </form>
             </div>
         </div>
