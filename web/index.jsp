@@ -9,6 +9,8 @@
 <%@ page import="dbControl.PostDAO" %>
 <%@ page import="dbControl.PostDTO" %>
 <%@ page import="dbControl.MemberDAO" %>
+<%@ page import="dbControl.CommentDAO" %>
+<%@ page import="dbControl.CommentDTO" %>
 <%@ page import="java.util.List" %>
 
 <%  //로그인 체크
@@ -37,8 +39,12 @@
 <div class="content-area">
 
 <%
-    for(int i =0; i<postList.size(); i++){
+    for(int i=0; i<postList.size(); i++){
         PostDTO post = postList.get(i);
+
+        List<CommentDTO> commentList = null;
+        CommentDAO commentDAO = new CommentDAO();
+        commentList = commentDAO.getList(post.getId());
 
         int user_id = post.getUser_id();
 %>
@@ -61,11 +67,14 @@
                 #해시태그 #준비중
             </p>
             <p class="post-comment">
-                <i>댓글 <%= post.getCnt_comment()%>개 모두 보기</i> <br>
-                <b>Stranger</b> 선팔하고 가요~<br>
-                <b>Stranger</b> 선팔하고 가요~<br>
-                <b>Stranger</b> 선팔하고 가요~<br>
-                <b>Stranger</b> 선팔하고 가요~<br>
+<%
+    for(int j=0; j<commentList.size(); j++){
+        CommentDTO comment = commentList.get(j);
+%>
+                <b><%=memDao.getUsername(comment.getUser_id()) %></b> <%=comment.getContent() %><br>
+<%
+    }
+%>
             </p>
             <hr>
             <div class="post-input">

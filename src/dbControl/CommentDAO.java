@@ -18,7 +18,7 @@ public class CommentDAO {
         dbconnect = new DBConnect();
     }
 
-    //댓글 목록 가져오기
+    //댓글 전체 목록 가져오기
     public List<CommentDTO> getList(int post_id) throws Exception{
         Connection con = dbconnect.getConnection();
         PreparedStatement pstmt = null;
@@ -26,7 +26,7 @@ public class CommentDAO {
         List<CommentDTO>list = null;
 
         try{
-            sql = "SELECT * FROM insta.comment ORDER BY id DESC WHERE post_id=?";
+            sql = "SELECT * FROM insta.comment WHERE post_id= ? ORDER BY id DESC ";
             pstmt = con.prepareStatement(sql);
             pstmt.setInt(1, post_id);
 
@@ -38,11 +38,9 @@ public class CommentDAO {
                 do{
                     CommentDTO comment = new CommentDTO();
                     comment.setId(rs.getInt("id"));
-                    comment.setImage(rs.getString("image"));
                     comment.setContent(rs.getString("content"));
                     comment.setUser_id(rs.getInt("user_id"));
-                    comment.setCnt_like(rs.getInt("cnt_like"));
-                    comment.setCnt_comment(rs.getInt("cnt_comment"));
+                    comment.setPost_id(rs.getInt("post_id"));
                     list.add(comment);
                 }while(rs.next());
             }else {

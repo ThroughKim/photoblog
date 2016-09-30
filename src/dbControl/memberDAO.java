@@ -92,6 +92,7 @@ public class MemberDAO {
         return profileImg;
     }
 
+    //User Name 얻어오기
     public String getUsername(int user_id)throws Exception{
         Connection  con = dbconnect.getConnection();
         PreparedStatement pstmt = null;

@@ -4,6 +4,7 @@ package dbControl;
  * Created by throughkim on 2016. 9. 29..
  */
 public class CommentDTO {
+    private int id;
     private int user_id;
     private int post_id;
     private String content;
@@ -12,10 +13,19 @@ public class CommentDTO {
 
     }
 
-    public CommentDTO(int user_id, int post_id, String content){
+    public CommentDTO(int id, int user_id, int post_id, String content){
+        this.id = id;
         this.user_id = user_id;
         this.post_id = post_id;
         this.content = content;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getUser_id() {
