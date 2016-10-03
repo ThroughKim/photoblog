@@ -1,0 +1,11 @@
+*.jar
+*.war
+*.ear
+
+.idea/
+*.iml
+*.iws
+
+.DS_Store
+
+web/images/
