@@ -26,7 +26,7 @@ public class CommentDAO {
         List<CommentDTO>list = null;
 
         try{
-            sql = "SELECT * FROM insta.comment WHERE post_id= ? ORDER BY id DESC ";
+            sql = "SELECT * FROM insta.comment WHERE post_id= ? ORDER BY id ASC";
             pstmt = con.prepareStatement(sql);
             pstmt.setInt(1, post_id);
 
@@ -55,7 +55,7 @@ public class CommentDAO {
     }
 
     //댓글 입력하기
-    public int insertComment(int post_id, int user_id, String content){
+    public int insertComment(int user_id, int post_id, String content){
         Connection con = dbconnect.getConnection();
         PreparedStatement pstmt = null;
         int check = 0;

@@ -35,8 +35,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+            <state relative-caret-position="40">
+              <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -45,8 +45,8 @@
       <file leaf-file-name="commentPro.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/commentPro.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+            <state relative-caret-position="355">
+              <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -55,8 +55,8 @@
       <file leaf-file-name="loginPro.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/login/loginPro.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+            <state relative-caret-position="165">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -102,8 +102,8 @@
       <file leaf-file-name="MemberDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dbControl/MemberDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1804">
-              <caret line="123" column="28" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
+            <state relative-caret-position="645">
+              <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1475235010000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
@@ -121,12 +121,12 @@
       <file leaf-file-name="CommentDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dbControl/CommentDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="535">
-              <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+            <state relative-caret-position="295">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1475236132000" expanded="true" signature="670:731" ph="SELECT * FRO... comment" />
-                <marker date="1475236132000" expanded="true" signature="1809:1875" ph="INSERT INTO insta.comment... " />
+                <marker date="1475473335000" expanded="true" signature="670:730" ph="SELECT * FRO... comment" />
+                <marker date="1475473335000" expanded="true" signature="1807:1873" ph="INSERT INTO insta.comment... " />
               </folding>
             </state>
           </provider>
@@ -277,24 +277,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photoblog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photoblog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="login" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -913,16 +895,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1475042950918</updated>
-      <workItem from="1475042955246" duration="31929000" />
+      <workItem from="1475042955246" duration="33720000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31929000" />
+    <option name="totallyTimeSpent" value="33720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -938,7 +920,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1112,14 +1094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/postEdit/postingEditPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dbControl/PostDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-110">
@@ -1128,6 +1102,22 @@
             <element signature="imports" expanded="true" />
             <marker date="1475072084000" expanded="true" signature="699:740" ph="SELECT * FRO... post" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/assets/css/css_main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/postEdit/postingEditPage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="39" column="45" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,10 +1146,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login/loginPro.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/dbControl/MemberDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1804">
-          <caret line="123" column="28" selection-start-line="123" selection-start-column="28" selection-end-line="123" selection-end-column="28" />
+        <state relative-caret-position="645">
+          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <marker date="1475235010000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
@@ -1175,44 +1181,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dbControl/CommentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="535">
-          <caret line="78" column="5" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
+        <state relative-caret-position="295">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1475236132000" expanded="true" signature="670:731" ph="SELECT * FRO... comment" />
-            <marker date="1475236132000" expanded="true" signature="1809:1875" ph="INSERT INTO insta.comment... " />
+            <marker date="1475473335000" expanded="true" signature="670:730" ph="SELECT * FRO... comment" />
+            <marker date="1475473335000" expanded="true" signature="1807:1873" ph="INSERT INTO insta.comment... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/assets/css/css_main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login/loginPro.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/commentPro.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="67" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
+        <state relative-caret-position="355">
+          <caret line="25" column="65" selection-start-line="25" selection-start-column="65" selection-end-line="25" selection-end-column="65" />
           <folding />
         </state>
       </provider>

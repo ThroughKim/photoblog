@@ -46,24 +46,28 @@
         CommentDAO commentDAO = new CommentDAO();
         commentList = commentDAO.getList(post.getId());
 
-        int user_id = post.getUser_id();
+        int userId = post.getUser_id();
+        String postImg = post.getImage();
+        int cntLike = post.getCnt_like();
+        String content = post.getContent();
+        int postId = post.getId();
 %>
     <div class="post-box">
         <p class="post-top">
-            <img src="${pageContext.request.contextPath}<%=memDao.getProfileImg(user_id) %>" class="post-profile-img">
+            <img src="${pageContext.request.contextPath}<%=memDao.getProfileImg(userId) %>" class="post-profile-img">
             <span class="post-top-name">
-                  <%=memDao.getUsername(user_id) %>
+                  <%=memDao.getUsername(userId) %>
               </span>
         </p>
         <p>
-            <img src="${pageContext.request.contextPath}<%= post.getImage()%>" class="post-img">
+            <img src="${pageContext.request.contextPath}<%= postImg%>" class="post-img">
         </p>
         <div class="post-content">
             <p class="post-like">
-                좋아요 <%= post.getCnt_like() %>개
+                좋아요 <%=cntLike %>개
             </p>
             <p class="post-story">
-                <b>Through_kim</b> <%= post.getContent() %>
+                <b>Through_kim</b> <%=content %>
                 #해시태그 #준비중
             </p>
             <p class="post-comment">
@@ -81,7 +85,7 @@
                 <img src="${pageContext.request.contextPath}/assets/icons/like_colored.png">
                 <form action="commentPro.jsp" method="post">
                     <input type="text" placeholder="댓글 달기..." class="post-input-comment-box comment-placeholder" name="content">
-                    <input type="hidden" name="post_id" value="<%=post.getId()%>">
+                    <input type="hidden" name="post_id" value="<%=postId %>">
                     <input type="hidden" name="user_id" value="<%=memDao.getUser_id((String)session.getAttribute("memEmail"))%>">
                 </form>
             </div>

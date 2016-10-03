@@ -9,6 +9,7 @@
 <%@ page import="dbControl.CommentDAO" %>
 
 <%
+    request.setCharacterEncoding("UTF-8");
     int user_id = Integer.parseInt(request.getParameter("user_id"));
     int post_id = Integer.parseInt(request.getParameter("post_id"));
     String content = request.getParameter("content");
@@ -21,7 +22,7 @@
 %>
 
 <script>
-    alert("댓글이 정상적으로 등록되었습니다.")
+    alert("댓글이 정상적으로 등록되었습니다. postid = "+ <%=post_id %> + "userid="+<%=user_id %>);
     location.href="${pageContext.request.contextPath}/index.jsp";
 </script>
 <%
