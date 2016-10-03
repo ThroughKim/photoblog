@@ -7,7 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%  //로그인 체크
-    if(session.getAttribute("memEmail")==null){
+    if(session.getAttribute("memId")==null){
 %>
 <jsp:forward page="${pageContext.request.contextPath}/login/loginPage.jsp" />
 <%
@@ -29,7 +29,7 @@
             업로드할 이미지를 선택해주세요
         </p>
         <hr>
-        <form name="fileform" enctype="multipart/form-data" action="imgUpload.jsp" method="post">
+        <form name="fileform" enctype="multipart/form-data" action="${pageContext.request.contextPath}/postEdit/imgUpload.jsp" method="post">
             <p>
                 <input type="file" value="이미지 선택" name="filename"><br>
             </p>

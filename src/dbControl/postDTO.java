@@ -9,7 +9,6 @@ public class PostDTO {
     private String content;
     private int user_id;
     private int cnt_like;
-    private int cnt_comment;
     private String create_datetime;
 
     public PostDTO(){
@@ -17,15 +16,15 @@ public class PostDTO {
     }
 
     public PostDTO(int id, String image, String content,
-                   int user_id, int cnt_like, int cnt_comment, String create_datetime){
+                   int user_id, int cnt_like, String create_datetime){
         this.id = id;
         this.image = image;
         this.content = content;
         this.user_id = user_id;
         this.cnt_like = cnt_like;
-        this.cnt_comment = cnt_comment;
         this.create_datetime = create_datetime;
     }
+
     public int getId() {
         return id;
     }
@@ -64,14 +63,6 @@ public class PostDTO {
 
     public void setCnt_like(int cnt_like) {
         this.cnt_like = cnt_like;
-    }
-
-    public int getCnt_comment() {
-        return cnt_comment;
-    }
-
-    public void setCnt_comment(int cnt_comment) {
-        this.cnt_comment = cnt_comment;
     }
 
     public String getCreate_datetime() {

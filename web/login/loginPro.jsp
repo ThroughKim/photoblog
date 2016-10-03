@@ -19,7 +19,7 @@
 
     if(check==1){
         //인증성공
-        session.setAttribute("memEmail", email);
+        session.setAttribute("memId", memberDao.getUser_id(email));
 %>
         <script>
             location.href="${pageContext.request.contextPath}/index.jsp";

@@ -12,6 +12,8 @@
 <!-- 파일 중복처리 객체 임포트 -->
 <%@ page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy" %>
 <%@ page import="java.util.*" %>
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.io.File" %>
 
 <%
     String uploadPath = pageContext.getServletContext().getRealPath("images");
@@ -19,6 +21,7 @@
     int size = 10*1024*1024;        // 업로드 파일 최대 크기 지정
 
     String filename="";
+    String realFileName="";
 
 
     try{
@@ -38,6 +41,17 @@
         String file = (String)files.nextElement();
         filename = multi.getFilesystemName(file);
 
+        //현재시간으로 파일명 변경
+        String now = new SimpleDateFormat("yyyyMMddHmsS").format(new Date());
+        int i = -1;
+        i = filename.lastIndexOf("."); // 파일 확장자 위치
+        realFileName = now + filename.substring(i, filename.length());  //현재시간과 확장자 합치기
+
+        File oldFile = new File(uploadPath + "/" + filename);
+        File newFile = new File(uploadPath + "/" + realFileName);
+
+        oldFile.renameTo(newFile);
+
 
     }catch(Exception e){
         // 예외처리
@@ -46,5 +60,5 @@
 
 %>
 <script>
-    location.href = "${pageContext.request.contextPath}/postEdit/postingEditPage.jsp?filepath=/images/<%= filename%>";
+    location.href = "${pageContext.request.contextPath}/postEdit/postingEditPage.jsp?filepath=/images/<%= realFileName%>";
 </script>

@@ -14,7 +14,7 @@
 <%@ page import="java.util.List" %>
 
 <%  //로그인 체크
-  if(session.getAttribute("memEmail")==null){
+  if(session.getAttribute("memId")==null){
 %>
       <jsp:forward page="${pageContext.request.contextPath}/login/loginPage.jsp" />
 <%
@@ -67,8 +67,7 @@
                 좋아요 <%=cntLike %>개
             </p>
             <p class="post-story">
-                <b>Through_kim</b> <%=content %>
-                #해시태그 #준비중
+                <b>Through_kim</b> <%=content.replace("\r\n","<br>") %>
             </p>
             <p class="post-comment">
 <%
@@ -86,7 +85,7 @@
                 <form action="commentPro.jsp" method="post">
                     <input type="text" placeholder="댓글 달기..." class="post-input-comment-box comment-placeholder" name="content">
                     <input type="hidden" name="post_id" value="<%=postId %>">
-                    <input type="hidden" name="user_id" value="<%=memDao.getUser_id((String)session.getAttribute("memEmail"))%>">
+                    <input type="hidden" name="user_id" value="<%=session.getAttribute("memId")%>">
                 </form>
             </div>
         </div>
