@@ -29,9 +29,9 @@
             업로드할 이미지를 선택해주세요
         </p>
         <hr>
-        <form>
+        <form name="fileform" enctype="multipart/form-data" action="imgUpload.jsp" method="post">
             <p>
-                <input type="file" value="이미지 선택"><br>
+                <input type="file" value="이미지 선택" name="filename"><br>
             </p>
             <input type="submit" value="확인" class="image-select-button">
             <input type="button" value="뒤로가기" class="image-select-button">

@@ -13,6 +13,11 @@
 <%
     }
 %>
+<%
+    request.setCharacterEncoding("UTF-8");
+
+    String filepath = request.getParameter("filepath");
+%>
 <html>
 <head>
     <title>이미지 선택</title>
@@ -20,17 +25,15 @@
     <meta charset="utf-8">
 </head>
 <body>
-
-<jsp:include page="${pageContext.request.contextPath/mainMenu.jsp" flush="false"></jsp:include>
-
+<jsp:include page="${pageContext.request.contextPath}/mainMenu.jsp" flush="false"></jsp:include>
 <div class="content-area">
     <div class="upload-box">
         <p>
-            포스팅 편집
+            포스팅 편집 <%= filepath%>
         </p>
         <hr>
         <p>
-            <img src="../images/sample.png" class="uploading-image">
+            <img src="${pageContext.request.contextPath}<%=filepath %>" class="uploading-image">
         </p>
         <form>
             <p>
