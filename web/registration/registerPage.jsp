@@ -24,7 +24,6 @@
             <p>
                 <label for="nick">Nick Name </label><br>
                 <input type="text" name="nick" placeholder="Your Nickname" id="nick">
-                <input type="button" value="중복확인" id="duplicate-check-button">
             </p>
             <p>
                 <label for="email">Email </label><br>
