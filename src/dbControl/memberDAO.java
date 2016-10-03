@@ -118,6 +118,7 @@ public class MemberDAO {
         return nickName;
     }
 
+    //email로 user_id갖고오기
     public int getUser_id(String user_email)throws Exception{
         Connection con = dbconnect.getConnection();
         PreparedStatement pstmt = null;
@@ -141,6 +142,60 @@ public class MemberDAO {
             DBClose.close(con, pstmt);
         }
         return user_id;
+    }
+
+    //ID 중복 체크
+    public int checkID(String id) {
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        String recievedId = id;
+        int checkNum = -1;
+
+        try {
+            sql = "SELECT * FROM insta.members where username = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setString(1, recievedId);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                checkNum = 1;   //중복아이디 존재
+            }else{
+                checkNum = 0;   //중복아이디 없음
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return checkNum;
+    }
+
+    //EMAIL 중복 체크
+    public int checkEmail(String email) {
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        String recievedEmail = email;
+        int checkNum = -1;
+
+        try {
+            sql = "SELECT * FROM insta.members where email = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setString(1, recievedEmail);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                checkNum = 1;   //중복이메일 존재
+            }else{
+                checkNum = 0;   //중복이메일 없음
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return checkNum;
     }
 
 }

@@ -22,7 +22,7 @@
 %>
 
 <script>
-    alert("댓글이 정상적으로 등록되었습니다. postid = "+ <%=post_id %> + "userid="+<%=user_id %>);
+    alert("댓글이 정상적으로 등록되었습니다.");
     location.href="${pageContext.request.contextPath}/index.jsp";
 </script>
 <%

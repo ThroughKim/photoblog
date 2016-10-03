@@ -10,6 +10,8 @@
 
 <%
     request.setCharacterEncoding("UTF-8");
+    String userName = (String)request.getParameter("nick");
+    String email = (String)request.getParameter("email");
 %>
 
 <jsp:useBean id="dto" class="dbControl.MemberDTO" />
@@ -17,10 +19,33 @@
 
 <%
     MemberDAO memberDao = new MemberDAO();
-    memberDao.insertMember(dto);
+
+    if(memberDao.checkID(userName) == 1){
+%>
+<script>
+    alert("<%=userName %> 은 이미 사용중인 Nick Name 입니다.");
+    history.go(-1);
+</script>
+
+<%
+
+    }else if(memberDao.checkEmail(email) == 1){
+%>
+<script>
+    alert("<%=email%>은 이미 사용중인 이메일입니다.");
+    history.go(-1);
+</script>
+<%
+
+    }else{
+            memberDao.insertMember(dto);
 %>
 
 <script>
     alert("가입이 완료되었습니다.");
     location.href="${pageContext.request.contextPath}/index.jsp"
 </script>
+<%
+    }
+%>
+}
