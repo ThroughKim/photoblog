@@ -454,20 +454,26 @@ body{
     flex-shrink: 0;
     margin-bottom: 28px;
     -webkit-box-direction: normal;
-    align-items: stretch;
+    align-items: center;
     box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
 }
 
 .profile-post {
     width: 100%;
     margin-right: 28px;
+    max-width: 293px;
+    max-height: 293px;
 }
 
 .profile-post img {
     width: 100%;
     margin-right: 28px;
     flex-shrink: 0;
+    max-width: 293px;
+    max-height: 293px;
     position: relative;
 }
 

@@ -62,20 +62,33 @@
         </div>
 
         <div class="profile-posts">
+<%
+    for(int i=0; i<postList.size(); i+=3){
+%>
             <div class="profile-posts-row">
 <%
-    for(int i=0; i<postList.size(); i++){
+        for(int j = i; j < i+3; j++){
+            if(j<postList.size()){
+                PostDTO post = postList.get(j);
 
-                PostDTO post = postList.get(i);
+                List<CommentDTO> commentList = null;
+                CommentDAO commentDAO = new CommentDAO();
+
+                int userId = post.getUser_id();
                 String postImg = post.getImage();
+                int postId = post.getId();
 %>
                 <div class="profile-post">
                     <img src="${pageContext.request.contextPath}<%=postImg%>">
                 </div>
 <%
-    }
+            }
+        }
 %>
             </div>
+<%
+    }
+%>
         </div>
     </div>
 
