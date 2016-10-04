@@ -118,7 +118,33 @@ public class MemberDAO {
         return nickName;
     }
 
-    //email로 user_id갖고오기
+    //유저 소개글 가져오기
+    public String getProfileComment(int user_id){
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        String profileComment = "";
+
+        try{
+            sql = "SELECT profile_comment FROM insta.members where id = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, user_id);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                profileComment = rs.getString("profile_comment");
+            }else{
+                profileComment = "오류발생";
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return profileComment;
+    }
+
+    //email로 user_id가져오
     public int getUser_id(String user_email)throws Exception{
         Connection con = dbconnect.getConnection();
         PreparedStatement pstmt = null;

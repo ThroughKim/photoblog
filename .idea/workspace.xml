@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11e51217-6b63-409e-a857-f1c045503d08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/profile/profilePageBackup.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/profile/profilePostView.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/photoblog/dbControl/exam.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/exam.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/photoblog/dbControl/memberDAO.class" afterPath="$PROJECT_DIR$/out/production/photoblog/dbControl/memberDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/MemberDAO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/MemberDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/css_main.css" afterPath="$PROJECT_DIR$/web/assets/css/css_main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dbControl/memberDAO.java" afterPath="$PROJECT_DIR$/src/dbControl/memberDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/profile/profilePage.jsp" afterPath="$PROJECT_DIR$/web/profile/profilePage.jsp" />
     </list>
     <ignored path="photoblog.iws" />
@@ -31,7 +34,7 @@
       <file leaf-file-name="postingUploadPro.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/postEdit/postingUploadPro.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="203">
               <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
@@ -51,34 +54,9 @@
       <file leaf-file-name="PostDTO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dbControl/PostDTO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="353">
               <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-              <folding>
-                <element signature="e#639#640#0" expanded="false" />
-                <element signature="e#664#665#0" expanded="false" />
-                <element signature="e#697#698#0" expanded="false" />
-                <element signature="e#725#726#0" expanded="false" />
-                <element signature="e#757#758#0" expanded="false" />
-                <element signature="e#785#786#0" expanded="false" />
-                <element signature="e#827#828#0" expanded="false" />
-                <element signature="e#861#862#0" expanded="false" />
-                <element signature="e#895#896#0" expanded="false" />
-                <element signature="e#925#926#0" expanded="false" />
-                <element signature="e#971#972#0" expanded="false" />
-                <element signature="e#1009#1010#0" expanded="false" />
-                <element signature="e#1040#1041#0" expanded="false" />
-                <element signature="e#1070#1071#0" expanded="false" />
-                <element signature="e#1113#1114#0" expanded="false" />
-                <element signature="e#1151#1152#0" expanded="false" />
-                <element signature="e#1183#1184#0" expanded="false" />
-                <element signature="e#1214#1215#0" expanded="false" />
-                <element signature="e#1259#1260#0" expanded="false" />
-                <element signature="e#1299#1300#0" expanded="false" />
-                <element signature="e#1341#1342#0" expanded="false" />
-                <element signature="e#1379#1380#0" expanded="false" />
-                <element signature="e#1441#1442#0" expanded="false" />
-                <element signature="e#1495#1496#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,35 +64,30 @@
       <file leaf-file-name="MemberDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dbControl/MemberDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="1628">
+              <caret line="128" column="67" selection-start-line="128" selection-start-column="67" selection-end-line="128" selection-end-column="67" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#243#244#0" expanded="false" />
-                <element signature="e#286#287#0" expanded="false" />
-                <marker date="1475476745000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
-                <marker date="1475476745000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
-                <marker date="1475476745000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
-                <marker date="1475476745000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
-                <marker date="1475476745000" expanded="true" signature="2121:2171" ph="SELECT profi... members" />
-                <marker date="1475476745000" expanded="true" signature="2908:2955" ph="SELECT usern... members" />
-                <marker date="1475476745000" expanded="true" signature="3670:3714" ph="SELECT id fr... members" />
-                <marker date="1475476745000" expanded="true" signature="4407:4453" ph="SELECT * FRO... members" />
-                <marker date="1475476745000" expanded="true" signature="5176:5219" ph="SELECT * FRO... members" />
+                <marker date="1475569358000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
+                <marker date="1475569358000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
+                <marker date="1475569358000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
+                <marker date="1475569358000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
+                <marker date="1475569358000" expanded="true" signature="2121:2171" ph="SELECT profi... members" />
+                <marker date="1475569358000" expanded="true" signature="2908:2955" ph="SELECT usern... members" />
+                <marker date="1475569358000" expanded="true" signature="3662:3716" ph="SELECT profi... members" />
+                <marker date="1475569358000" expanded="true" signature="4445:4489" ph="SELECT id fr... members" />
+                <marker date="1475569358000" expanded="true" signature="5182:5228" ph="SELECT * FRO... members" />
+                <marker date="1475569358000" expanded="true" signature="5951:5994" ph="SELECT * FRO... members" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostDAO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PostDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dbControl/PostDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="960">
+            <state relative-caret-position="443">
               <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#397#398#0" expanded="false" />
-                <element signature="e#440#441#0" expanded="false" />
                 <marker date="1475493526000" expanded="true" signature="699:740" ph="SELECT * FRO... post" />
                 <marker date="1475493526000" expanded="true" signature="1827:1888" ph="INSERT INTO insta.post... " />
               </folding>
@@ -122,21 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profilePageBackup.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/profile/profilePageBackup.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profilePage.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profilePage.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/profile/profilePage.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="72" column="78" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
+            <state relative-caret-position="353">
+              <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -145,7 +108,7 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-142">
+            <state relative-caret-position="248">
               <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
               <folding />
             </state>
@@ -216,7 +179,6 @@
         <option value="$PROJECT_DIR$/src/dbControl/CommentDAO.java" />
         <option value="$PROJECT_DIR$/web/commentPro.jsp" />
         <option value="$PROJECT_DIR$/web/registration/idCheck.jsp" />
-        <option value="$PROJECT_DIR$/src/dbControl/MemberDAO.java" />
         <option value="$PROJECT_DIR$/web/assets/js/main_js.js" />
         <option value="$PROJECT_DIR$/web/registration/registerPage.jsp" />
         <option value="$PROJECT_DIR$/web/test.jsp" />
@@ -234,9 +196,11 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/profile/profilePostView.jsp" />
         <option value="$PROJECT_DIR$/src/dbControl/exam.java" />
-        <option value="$PROJECT_DIR$/web/profile/profilePage.jsp" />
         <option value="$PROJECT_DIR$/web/profile/profilePage_test.jsp" />
         <option value="$PROJECT_DIR$/web/assets/css/css_main.css" />
+        <option value="$PROJECT_DIR$/web/profile/profilePage.jsp" />
+        <option value="$PROJECT_DIR$/src/dbControl/ss.java" />
+        <option value="$PROJECT_DIR$/src/dbControl/MemberDAO.java" />
       </list>
     </option>
   </component>
@@ -252,6 +216,13 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1440" />
@@ -345,46 +316,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photoblog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photoblog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photoblog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="photoblog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -398,7 +329,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -1013,6 +944,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="11e51217-6b63-409e-a857-f1c045503d08" name="Default" comment="" />
@@ -1022,12 +956,12 @@
       <updated>1475042950918</updated>
       <workItem from="1475042955246" duration="38853000" />
       <workItem from="1475479016491" duration="25189000" />
-      <workItem from="1475562497510" duration="4216000" />
+      <workItem from="1475562497510" duration="5923000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68258000" />
+    <option name="totallyTimeSpent" value="69965000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1103,14 +1037,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/registration/registerPage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/postEdit/postingUploadPro.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -1131,32 +1057,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#639#640#0" expanded="false" />
-            <element signature="e#664#665#0" expanded="false" />
-            <element signature="e#697#698#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#757#758#0" expanded="false" />
-            <element signature="e#785#786#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#861#862#0" expanded="false" />
-            <element signature="e#895#896#0" expanded="false" />
-            <element signature="e#925#926#0" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#1009#1010#0" expanded="false" />
-            <element signature="e#1040#1041#0" expanded="false" />
-            <element signature="e#1070#1071#0" expanded="false" />
-            <element signature="e#1113#1114#0" expanded="false" />
-            <element signature="e#1151#1152#0" expanded="false" />
-            <element signature="e#1183#1184#0" expanded="false" />
-            <element signature="e#1214#1215#0" expanded="false" />
-            <element signature="e#1259#1260#0" expanded="false" />
-            <element signature="e#1299#1300#0" expanded="false" />
-            <element signature="e#1341#1342#0" expanded="false" />
-            <element signature="e#1379#1380#0" expanded="false" />
-            <element signature="e#1441#1442#0" expanded="false" />
-            <element signature="e#1495#1496#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1165,18 +1066,16 @@
         <state relative-caret-position="330">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#243#244#0" expanded="false" />
-            <element signature="e#286#287#0" expanded="false" />
-            <marker date="1475476745000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
-            <marker date="1475476745000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
-            <marker date="1475476745000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
-            <marker date="1475476745000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
-            <marker date="1475476745000" expanded="true" signature="2121:2171" ph="SELECT profi... members" />
-            <marker date="1475476745000" expanded="true" signature="2908:2955" ph="SELECT usern... members" />
-            <marker date="1475476745000" expanded="true" signature="3670:3714" ph="SELECT id fr... members" />
-            <marker date="1475476745000" expanded="true" signature="4407:4453" ph="SELECT * FRO... members" />
-            <marker date="1475476745000" expanded="true" signature="5176:5219" ph="SELECT * FRO... members" />
+            <marker date="1475569358000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
+            <marker date="1475569358000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
+            <marker date="1475569358000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
+            <marker date="1475569358000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
+            <marker date="1475569358000" expanded="true" signature="2121:2171" ph="SELECT profi... members" />
+            <marker date="1475569358000" expanded="true" signature="2908:2955" ph="SELECT usern... members" />
+            <marker date="1475569358000" expanded="true" signature="3662:3716" ph="SELECT profi... members" />
+            <marker date="1475569358000" expanded="true" signature="4445:4489" ph="SELECT id fr... members" />
+            <marker date="1475569358000" expanded="true" signature="5182:5228" ph="SELECT * FRO... members" />
+            <marker date="1475569358000" expanded="true" signature="5951:5994" ph="SELECT * FRO... members" />
           </folding>
         </state>
       </provider>
@@ -1186,9 +1085,6 @@
         <state relative-caret-position="960">
           <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#397#398#0" expanded="false" />
-            <element signature="e#440#441#0" expanded="false" />
             <marker date="1475493526000" expanded="true" signature="699:740" ph="SELECT * FRO... post" />
             <marker date="1475493526000" expanded="true" signature="1827:1888" ph="INSERT INTO insta.post... " />
           </folding>
@@ -1241,6 +1137,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1257,18 +1154,16 @@
         <state relative-caret-position="2805">
           <caret line="192" column="29" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#243#244#0" expanded="false" />
-            <element signature="e#286#287#0" expanded="false" />
-            <marker date="1475476745000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
-            <marker date="1475476745000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
-            <marker date="1475476745000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
-            <marker date="1475476745000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
-            <marker date="1475476745000" expanded="true" signature="2121:2171" ph="SELECT profi... members" />
-            <marker date="1475476745000" expanded="true" signature="2908:2955" ph="SELECT usern... members" />
-            <marker date="1475476745000" expanded="true" signature="3670:3714" ph="SELECT id fr... members" />
-            <marker date="1475476745000" expanded="true" signature="4407:4453" ph="SELECT * FRO... members" />
-            <marker date="1475476745000" expanded="true" signature="5176:5219" ph="SELECT * FRO... members" />
+            <marker date="1475569358000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
+            <marker date="1475569358000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
+            <marker date="1475569358000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
+            <marker date="1475569358000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
+            <marker date="1475569358000" expanded="true" signature="2121:2171" ph="SELECT profi... members" />
+            <marker date="1475569358000" expanded="true" signature="2908:2955" ph="SELECT usern... members" />
+            <marker date="1475569358000" expanded="true" signature="3662:3716" ph="SELECT profi... members" />
+            <marker date="1475569358000" expanded="true" signature="4445:4489" ph="SELECT id fr... members" />
+            <marker date="1475569358000" expanded="true" signature="5182:5228" ph="SELECT * FRO... members" />
+            <marker date="1475569358000" expanded="true" signature="5951:5994" ph="SELECT * FRO... members" />
           </folding>
         </state>
       </provider>
@@ -1321,6 +1216,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1369,6 +1265,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1407,6 +1304,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-9">
           <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1436,82 +1334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbControl/PostDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="e#639#640#0" expanded="false" />
-            <element signature="e#664#665#0" expanded="false" />
-            <element signature="e#697#698#0" expanded="false" />
-            <element signature="e#725#726#0" expanded="false" />
-            <element signature="e#757#758#0" expanded="false" />
-            <element signature="e#785#786#0" expanded="false" />
-            <element signature="e#827#828#0" expanded="false" />
-            <element signature="e#861#862#0" expanded="false" />
-            <element signature="e#895#896#0" expanded="false" />
-            <element signature="e#925#926#0" expanded="false" />
-            <element signature="e#971#972#0" expanded="false" />
-            <element signature="e#1009#1010#0" expanded="false" />
-            <element signature="e#1040#1041#0" expanded="false" />
-            <element signature="e#1070#1071#0" expanded="false" />
-            <element signature="e#1113#1114#0" expanded="false" />
-            <element signature="e#1151#1152#0" expanded="false" />
-            <element signature="e#1183#1184#0" expanded="false" />
-            <element signature="e#1214#1215#0" expanded="false" />
-            <element signature="e#1259#1260#0" expanded="false" />
-            <element signature="e#1299#1300#0" expanded="false" />
-            <element signature="e#1341#1342#0" expanded="false" />
-            <element signature="e#1379#1380#0" expanded="false" />
-            <element signature="e#1441#1442#0" expanded="false" />
-            <element signature="e#1495#1496#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/postEdit/postingUploadPro.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbControl/MemberDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#243#244#0" expanded="false" />
-            <element signature="e#286#287#0" expanded="false" />
-            <marker date="1475476745000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
-            <marker date="1475476745000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
-            <marker date="1475476745000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
-            <marker date="1475476745000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
-            <marker date="1475476745000" expanded="true" signature="2121:2171" ph="SELECT profi... members" />
-            <marker date="1475476745000" expanded="true" signature="2908:2955" ph="SELECT usern... members" />
-            <marker date="1475476745000" expanded="true" signature="3670:3714" ph="SELECT id fr... members" />
-            <marker date="1475476745000" expanded="true" signature="4407:4453" ph="SELECT * FRO... members" />
-            <marker date="1475476745000" expanded="true" signature="5176:5219" ph="SELECT * FRO... members" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbControl/PostDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#397#398#0" expanded="false" />
-            <element signature="e#440#441#0" expanded="false" />
-            <marker date="1475493526000" expanded="true" signature="699:740" ph="SELECT * FRO... post" />
-            <marker date="1475493526000" expanded="true" signature="1827:1888" ph="INSERT INTO insta.post... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/postEdit/imgUpload.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -1536,14 +1358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142">
-          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/profile/profilePostView_test.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-112">
@@ -1560,19 +1374,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/postEdit/postingUploadPro.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/profile/profilePageBackup.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="80" column="35" selection-start-line="80" selection-start-column="35" selection-end-line="80" selection-end-column="35" />
+        <state relative-caret-position="428">
+          <caret line="82" column="22" selection-start-line="82" selection-start-column="22" selection-end-line="82" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/profile/profilePage.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="72" column="78" selection-start-line="72" selection-start-column="78" selection-end-line="72" selection-end-column="78" />
+        <state relative-caret-position="353">
+          <caret line="63" column="68" selection-start-line="63" selection-start-column="68" selection-end-line="63" selection-end-column="68" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbControl/ss.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbControl/MemberDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1628">
+          <caret line="128" column="67" selection-start-line="128" selection-start-column="67" selection-end-line="128" selection-end-column="67" />
+          <folding>
+            <marker date="1475569358000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
+            <marker date="1475569358000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
+            <marker date="1475569358000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
+            <marker date="1475569358000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
+            <marker date="1475569358000" expanded="true" signature="2121:2171" ph="SELECT profi... members" />
+            <marker date="1475569358000" expanded="true" signature="2908:2955" ph="SELECT usern... members" />
+            <marker date="1475569358000" expanded="true" signature="3662:3716" ph="SELECT profi... members" />
+            <marker date="1475569358000" expanded="true" signature="4445:4489" ph="SELECT id fr... members" />
+            <marker date="1475569358000" expanded="true" signature="5182:5228" ph="SELECT * FRO... members" />
+            <marker date="1475569358000" expanded="true" signature="5951:5994" ph="SELECT * FRO... members" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbControl/PostDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dbControl/PostDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="74" column="34" selection-start-line="74" selection-start-column="34" selection-end-line="74" selection-end-column="34" />
+          <folding>
+            <marker date="1475493526000" expanded="true" signature="699:740" ph="SELECT * FRO... post" />
+            <marker date="1475493526000" expanded="true" signature="1827:1888" ph="INSERT INTO insta.post... " />
+          </folding>
         </state>
       </provider>
     </entry>

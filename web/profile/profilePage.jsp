@@ -12,12 +12,24 @@
 <%@ page import="dbControl.CommentDAO" %>
 <%@ page import="dbControl.CommentDTO" %>
 <%@ page import="java.util.List" %>
-<%  //로그인 체크
+<%
+    request.setCharacterEncoding("UTF-8");
+    //로그인 체크
     if(session.getAttribute("memId")==null){
 %>
 <jsp:forward page="${pageContext.request.contextPath}/login/loginPage.jsp" />
 <%
-    }
+    }else if(request.getParameter("user_id")==null){
+%>
+<script>
+    alert("잘못된 방식의 접근입니다.");
+    history.go(-1);
+</script>
+<%
+    }else{
+        int requestedUserId = Integer.parseInt(request.getParameter("user_id"));
+
+        MemberDAO memDao = new MemberDAO();
 %>
 
 <html>
@@ -28,24 +40,17 @@
 </head>
 <body>
 <jsp:include page="${pageContext.request.contextPath}/mainMenu.jsp" flush="false"></jsp:include>
-<%
-    List<PostDTO> postList = null;
-    PostDAO postDao = new PostDAO();
-    postList = postDao.getList();
-
-    MemberDAO memDao = new MemberDAO();
-%>
 <div class="content-area">
 
 
     <div class="profile-contents">
         <div class="profile-header">
             <div class="profile-header-image">
-                <img class="profile-image" src="${pageContext.request.contextPath}/images/profile_img.jpg">
+                <img class="profile-image" src="${pageContext.request.contextPath}<%=memDao.getProfileImg(requestedUserId) %>">
             </div>
             <div class="profile-header-contents">
                 <div class="profile-header-nick">
-                    <h1>Through_kim</h1>
+                    <h1><%= memDao.getUsername(requestedUserId)%></h1>
                     <span class="follow-button-span">
                         <button>팔로잉</button>
                     </span>
@@ -56,24 +61,31 @@
                     <span>팔로잉 3명</span>
                 </div>
                 <div class="profile-comment">
-                    안녕하세요.
+                    <%= memDao.getProfileComment(requestedUserId) %>
                 </div>
             </div>
         </div>
 
+<%
+        List<PostDTO> postList = null;
+        PostDAO postDao = new PostDAO();
+        postList = postDao.getList();
+
+%>
+
         <div class="profile-posts">
             <div class="profile-posts-row">
 <%
-    for(int i=0; i<postList.size(); i++){
+        for(int i=0; i<postList.size(); i++){
 
-                PostDTO post = postList.get(i);
-                String postImg = post.getImage();
+                    PostDTO post = postList.get(i);
+                    String postImg = post.getImage();
 %>
                 <div class="profile-post">
                     <img src="${pageContext.request.contextPath}<%=postImg%>">
                 </div>
 <%
-    }
+        }
 %>
             </div>
         </div>
@@ -83,3 +95,6 @@
 </div>
 </body>
 </html>
+<%
+    }
+%>
