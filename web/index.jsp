@@ -14,7 +14,7 @@
 <%@ page import="java.util.List" %>
 
 <%  //로그인 체크
-  if(session.getAttribute("memId")==null){
+  if(session.getAttribute("memId") ==null){
 %>
       <jsp:forward page="${pageContext.request.contextPath}/login/loginPage.jsp" />
 <%
@@ -56,7 +56,9 @@
         <p class="post-top">
             <img src="${pageContext.request.contextPath}<%=memDao.getProfileImg(userId) %>" class="post-profile-img">
             <span class="post-top-name">
-                  <%=memDao.getUsername(userId) %>
+                  <a href="${pageContext.request.contextPath}/profile/profilePage.jsp?user_id=<%= userId%>">
+                      <%=memDao.getUsername(userId) %>
+                  </a>
               </span>
         </p>
         <p>
@@ -67,14 +69,18 @@
                 좋아요 <%=cntLike %>개
             </p>
             <p class="post-story">
-                <b><%=memDao.getUsername(post.getUser_id()) %></b> <%=content.replace("\r\n","<br>") %>
+                <b><a href="${pageContext.request.contextPath}/profile/profilePage.jsp?user_id=<%= userId%>">
+                    <%=memDao.getUsername(userId) %></a></b> <%=content.replace("\r\n","<br>") %>
+                </a>
             </p>
             <p class="post-comment">
 <%
     for(int j=0; j<commentList.size(); j++){
         CommentDTO comment = commentList.get(j);
 %>
-                <b><%=memDao.getUsername(comment.getUser_id()) %></b> <%=comment.getContent() %><br>
+                <b><a href="${pageContext.request.contextPath}/profile/profilePage.jsp?user_id=<%=comment.getUser_id()%>">
+                    <%=memDao.getUsername(comment.getUser_id()) %></b> <%=comment.getContent() %>
+                </a><br>
 <%
     }
 %>

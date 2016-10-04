@@ -57,6 +57,43 @@ public class PostDAO {
         return list;
     }
 
+    //요청 유저의 게시물만 불러오기
+    public List<PostDTO> getList(int user_id) throws Exception{
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        List<PostDTO>list = null;
+
+        try{
+            sql = "SELECT * FROM insta.post WHERE user_id = ? ORDER BY id DESC";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, user_id);
+
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                list = new ArrayList<PostDTO>();
+
+                do{
+                    PostDTO post = new PostDTO();
+                    post.setId(rs.getInt("id"));
+                    post.setImage(rs.getString("image"));
+                    post.setContent(rs.getString("content"));
+                    post.setUser_id(rs.getInt("user_id"));
+                    post.setCnt_like(rs.getInt("cnt_like"));
+                    list.add(post);
+                }while(rs.next());
+            }else {
+                list = Collections.EMPTY_LIST;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con,pstmt);
+        }
+        return list;
+    }
+
     //글 입력하기
     public int insertPost(String image, String content, int userId) throws Exception {
         Connection con = dbconnect.getConnection();

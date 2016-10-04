@@ -43,5 +43,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" scope="PROVIDED" name="Tomcat 8.5.5" level="application_server_libraries" />
   </component>
 </module>
