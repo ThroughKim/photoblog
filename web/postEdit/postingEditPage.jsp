@@ -21,7 +21,7 @@
 <html>
 <head>
     <title>이미지 선택</title>
-    <link href="../assets/css/css_main.css" rel="stylesheet" type="text/css">
+    <link href="${pageContext.request.contextPath}/assets/css/css_main.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
 </head>
 <body>

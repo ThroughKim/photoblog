@@ -28,7 +28,7 @@
     }else if(checkNum == 1){
 %>
 <script>
-    alert("포스팅이 정상적으로 작성되었습니다. checkNum:<%=checkNum%>, image:<%=image%>");
+    alert("포스팅이 정상적으로 작성되었습니다.");
     location.href = "${pageContext.request.contextPath}/index.jsp";
 </script>
 <%
