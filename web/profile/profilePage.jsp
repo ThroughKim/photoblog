@@ -78,11 +78,14 @@
 <%
         for(int i=0; i<postList.size(); i++){
 
-                    PostDTO post = postList.get(i);
-                    String postImg = post.getImage();
+            PostDTO post = postList.get(i);
+            String postImg = post.getImage();
+            int postId = post.getId();
 %>
                 <div class="profile-post">
-                    <img src="${pageContext.request.contextPath}<%=postImg%>">
+                    <a href="${pageContext.request.contextPath}/singlePostView.jsp?post_id=<%=postId %>">
+                        <img src="${pageContext.request.contextPath}<%=postImg%>">
+                    </a>
                 </div>
 <%
         }
