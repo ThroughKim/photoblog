@@ -9,8 +9,6 @@
 <%@ page import="dbControl.PostDAO" %>
 <%@ page import="dbControl.PostDTO" %>
 <%@ page import="dbControl.MemberDAO" %>
-<%@ page import="dbControl.CommentDAO" %>
-<%@ page import="dbControl.CommentDTO" %>
 <%@ page import="java.util.List" %>
 <%
     request.setCharacterEncoding("UTF-8");
@@ -19,7 +17,7 @@
 %>
 <jsp:forward page="${pageContext.request.contextPath}/login/loginPage.jsp" />
 <%
-    }else if(request.getParameter("user_id")==null){
+    }else if(request.getParameter("user_id")==null || request.getParameter("user_id")==""){
 %>
 <script>
     alert("잘못된 방식의 접근입니다.");
@@ -28,6 +26,15 @@
 <%
     }else{
         int requestedUserId = Integer.parseInt(request.getParameter("user_id"));
+        boolean isMyself = false;
+
+        //본인의 프로필인지 여부 확인
+
+        if((Integer)session.getAttribute("memId") == requestedUserId){
+            isMyself = true;
+        }else {
+            isMyself = false;
+        }
 
         MemberDAO memDao = new MemberDAO();
 %>
@@ -36,6 +43,7 @@
 <head>
     <title>Profile</title>
     <link href="${pageContext.request.contextPath}/assets/css/css_main.css" rel="stylesheet" type="text/css">
+    <script src="${pageContext.request.contextPath}/assets/js/main_js.js" type=text/javascript></script>
     <meta charset="utf-8">
 </head>
 <body>
@@ -52,7 +60,23 @@
                 <div class="profile-header-nick">
                     <h1><%= memDao.getUsername(requestedUserId)%></h1>
                     <span class="follow-button-span">
-                        <button>팔로잉</button>
+<%
+        if(isMyself == true){   //본인일 경우에만 해당 버튼이 표시됨
+%>
+                        <button class="profile-button">프로필 편집</button>&nbsp;
+                        <div class="dropdown">
+                            <button onclick="dropDown()" class="dropbtn profile-button">&nabla;</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="${pageContext.request.contextPath}/logout.jsp">로그아웃</a>
+                            </div>
+                        </div>
+<%
+        }else {
+%>
+                        <button class="follow-button">팔로잉</button>
+<%
+        }
+%>
                     </span>
                 </div>
                 <div class="profile-stat">

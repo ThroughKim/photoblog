@@ -21,7 +21,7 @@
         <a href="${pageContext.request.contextPath}/index.jsp">
             <img src="${pageContext.request.contextPath}/assets/icons/explore.png">
         </a>
-        <a href="${pageContext.request.contextPath}/logout.jsp">
+        <a href="${pageContext.request.contextPath}/profile/profilePage.jsp?user_id=<%=session.getAttribute("memId")%>">
             <img src="${pageContext.request.contextPath}/assets/icons/profile.png">
         </a>
         <a href="${pageContext.request.contextPath}/postEdit/imageSelectPage.jsp">

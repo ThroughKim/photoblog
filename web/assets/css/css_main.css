@@ -418,7 +418,7 @@ body{
     margin-left: 20px;
 }
 
-.follow-button-span > button{
+.follow-button{
     line-height: 29px;
     height: 29px;
     padding: 0 11px;
@@ -432,6 +432,60 @@ body{
     font-weight: 600;
 
 }
+
+.profile-button{
+    line-height: 29px;
+    height: 29px;
+    padding:  0 11px;
+    cursor: pointer;
+    background: transparent;
+    background-color: transparent;
+    color: inherit;
+    border-radius: 3px;
+    border: solid 1px #999;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Dropdown Button */
+.dropbtn {
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #70C050;
+    color: #ffffff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 .profile-stat{
     position: relative;
@@ -471,6 +525,7 @@ body{
 .profile-post {
     width: 100%;
     margin-right: 28px;
+    margin-bottom: 28px;
     max-width: 293px;
     max-height: 293px;
 }
@@ -478,6 +533,7 @@ body{
 .profile-post img {
     width: 100%;
     margin-right: 28px;
+    margin-bottom: 28px;
     flex-shrink: 0;
     max-width: 293px;
     max-height: 293px;

@@ -18,12 +18,18 @@
 %>
 <jsp:forward page="${pageContext.request.contextPath}/login/loginPage.jsp" />
 <%
-    }
+    }else if(request.getParameter("post_id")==null || request.getParameter("post_id") == ""){
+%>
+<script>
+    alert("잘못된 방식의 접근입니다.");
+    history.go(-1);
+</script>
 %>
 
 <%
-    request.setCharacterEncoding("UTF-8");
-    int postId = Integer.parseInt(request.getParameter("post_id"));
+    }else{
+        request.setCharacterEncoding("UTF-8");
+        int postId = Integer.parseInt(request.getParameter("post_id"));
 %>
 
 <html>
@@ -35,21 +41,21 @@
 <body>
 <jsp:include page="${pageContext.request.contextPath}/mainMenu.jsp" flush="false"></jsp:include>
 <%
-    PostDAO postDao = new PostDAO();
-    PostDTO post = new PostDTO();
-    MemberDAO memDao = new MemberDAO();
+        PostDAO postDao = new PostDAO();
+        PostDTO post = new PostDTO();
+        MemberDAO memDao = new MemberDAO();
 
 
-    post = postDao.getSinglePost(postId);
+        post = postDao.getSinglePost(postId);
 
-    int userId = post.getUser_id();
-    String postImg = post.getImage();
-    int cntLike = post.getCnt_like();
-    String content = post.getContent();
+        int userId = post.getUser_id();
+        String postImg = post.getImage();
+        int cntLike = post.getCnt_like();
+        String content = post.getContent();
 
-    List<CommentDTO> commentList = null;
-    CommentDAO commentDAO = new CommentDAO();
-    commentList = commentDAO.getList(post.getId());
+        List<CommentDTO> commentList = null;
+        CommentDAO commentDAO = new CommentDAO();
+        commentList = commentDAO.getList(post.getId());
 %>
 <div class="content-area">
     <div class="post-box">
@@ -93,3 +99,6 @@
 </div>
 </body>
 </html>
+<%
+    }
+%>
