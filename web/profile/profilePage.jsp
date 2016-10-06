@@ -9,6 +9,7 @@
 <%@ page import="dbControl.PostDAO" %>
 <%@ page import="dbControl.PostDTO" %>
 <%@ page import="dbControl.MemberDAO" %>
+<%@ page import="dbControl.FollowDAO" %>
 <%@ page import="java.util.List" %>
 <%
     request.setCharacterEncoding("UTF-8");
@@ -38,6 +39,11 @@
         }
 
         MemberDAO memDao = new MemberDAO();
+        FollowDAO followDao = new FollowDAO();
+
+        //팔로우중인지 확인
+
+        boolean isFollowing = followDao.isFollwing(memId, requestedUserId);
 %>
 
 <html>
@@ -72,13 +78,16 @@
                             </div>
                         </div>
 <%
-        }else {
+        }else if (isFollowing == true){ //팔로우중인 사람일때 해당 버튼이 표시됨
 %>
-                        <button class="follow-button" onclick="location.href='${pageContext.request.contextPath}/follow/follow.jsp?user_id=<%=memId%>&following_id=<%=requestedUserId%>'">
-                            팔로우
-                        </button>
                         <button class="unfollow-button" onclick="location.href='${pageContext.request.contextPath}/follow/unfollow.jsp?user_id=<%=memId%>&following_id=<%=requestedUserId%>'">
                             팔로잉
+                        </button>
+<%
+                        }else {         //자신의 계정도 아니고 팔로우중인 사람도 아닐 경우 표시됨
+                        %>
+                        <button class="follow-button" onclick="location.href='${pageContext.request.contextPath}/follow/follow.jsp?user_id=<%=memId%>&following_id=<%=requestedUserId%>'">
+                            팔로우
                         </button>
 <%
         }
