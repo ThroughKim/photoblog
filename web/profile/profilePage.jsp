@@ -25,12 +25,13 @@
 </script>
 <%
     }else{
+        int memId = (Integer)session.getAttribute("memId");
         int requestedUserId = Integer.parseInt(request.getParameter("user_id"));
         boolean isMyself = false;
 
         //본인의 프로필인지 여부 확인
 
-        if((Integer)session.getAttribute("memId") == requestedUserId){
+        if(memId == requestedUserId){
             isMyself = true;
         }else {
             isMyself = false;
@@ -73,7 +74,12 @@
 <%
         }else {
 %>
-                        <button class="following-button">팔로잉</button>
+                        <button class="follow-button" onclick="location.href='${pageContext.request.contextPath}/follow/follow.jsp?user_id=<%=memId%>&following_id=<%=requestedUserId%>'">
+                            팔로우
+                        </button>
+                        <button class="unfollow-button" onclick="location.href='${pageContext.request.contextPath}/follow/unfollow.jsp?user_id=<%=memId%>&following_id=<%=requestedUserId%>'">
+                            팔로잉
+                        </button>
 <%
         }
 %>

@@ -15,7 +15,7 @@ public class FollowDAO {
     public FollowDAO(){ dbConnect = new DBConnect();}
 
     //팔로우 기능 구현
-    public int following(int user_id,int following_id){
+    public int follow(int user_id,int following_id){
         Connection con = dbConnect.getConnection();
         PreparedStatement pstmt = null;
 
@@ -31,6 +31,30 @@ public class FollowDAO {
 
             check = 1;
 
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return check;
+    }
+
+    //언팔로우 기능 구현
+    public int unfollow(int user_id, int following_id){
+        Connection con = dbConnect.getConnection();
+        PreparedStatement pstmt = null;
+
+        int check = -1;
+
+        try{
+            sql = "DELETE FROM insta.follow WHERE user_id = ? && following_id = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, user_id);
+            pstmt.setInt(2, following_id);
+
+            pstmt.executeUpdate();
+
+            check = 1;
         }catch (Exception e){
             e.printStackTrace();
         }finally {

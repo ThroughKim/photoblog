@@ -418,7 +418,7 @@ body{
     margin-left: 20px;
 }
 
-.following-button{
+.unfollow-button{
     line-height: 29px;
     height: 29px;
     padding: 0 11px;
@@ -427,7 +427,22 @@ body{
     background-color: #70C050;
     color: #fff;
     border-radius: 3px;
-    border: solid 1px;
+    border: solid 1px #70C050;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.follow-button{
+    line-height: 29px;
+    height: 29px;
+    padding: 0 11px;
+    cursor: pointer;
+    color: #0095ff;
+    border-radius: 3px;
+    border: solid 1px #0095ff;
+    background: transparent;
+    background-color: transparent;
     font-size: 16px;
     font-weight: 600;
 
