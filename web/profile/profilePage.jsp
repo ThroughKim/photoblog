@@ -73,7 +73,7 @@
 <%
         }else {
 %>
-                        <button class="follow-button">팔로잉</button>
+                        <button class="following-button">팔로잉</button>
 <%
         }
 %>
