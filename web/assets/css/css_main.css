@@ -290,6 +290,7 @@ body{
     margin-top: 60px;
     max-width: 600px;
     padding: 24px 1.5em;
+    border: solid 1px #d3d3d3;
 }
 
 .upload-box > hr {
@@ -562,3 +563,118 @@ body{
 .profile-posts-row div:last-child{
     margin-right: 0;
 }
+
+.profile-edit-box{
+    background: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    max-width: 600px;
+    padding: 24px 1.5em;
+    display: flex;
+    flex-direction: column;
+    vertical-align: baseline;
+}
+
+.profile-edit-box > div{
+    display: flex;
+}
+
+.profile-edit-header{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.profile-edit-header > h1{
+    font-size: larger;
+}
+
+.profile-edit-header > p{
+    margin: 0 0;
+    font-size: small;
+    color: #999999;
+    text-align: right;
+}
+
+.profile-edit-header > hr{
+    width: 100%;
+    border: none;
+    border: solid 1px #d3d3d3;
+}
+
+.profile-edit-main{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+}
+.profile-edit-img-div{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding-top: 2em;
+}
+
+.profile-edit-img{
+    width: auto;
+    max-width: 150px;
+    border-radius: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-img-change-button{
+    line-height: 29px;
+    height: 29px;
+    padding: 0 11px;
+    cursor: pointer;
+    color: #0095ff;
+    border-radius: 3px;
+    border: solid 1px #0095ff;
+    background: transparent;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+
+}
+
+.profile-edit-content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-flex: 2;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+
+.profile-edit-form > p > label{
+    font-size: small;
+    margin-left: 1em;
+}
+
+.profile-edit-form > p > input{
+    margin-top: 0.5em;
+    font-size: small;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 1.5px #d3d3d3;
+    width: 80%;
+    margin-left: 1em;
+}
+
+#profile-edit-box-button{
+    width: 20%;
+    border: solid 1px #07c;
+    background-color: #0095ff;
+    box-shadow: inset 0 1px 0 #66bfff;
+    color: #ffffff;
+    border-radius: 10%;
+}
+

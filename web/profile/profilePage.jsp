@@ -28,7 +28,7 @@
     }else{
         int memId = (Integer)session.getAttribute("memId");
         int requestedUserId = Integer.parseInt(request.getParameter("user_id"));
-        boolean isMyself = false;
+        boolean isMyself;
 
         //본인의 프로필인지 여부 확인
 
@@ -70,7 +70,8 @@
 <%
         if(isMyself == true){   //본인일 경우에만 해당 버튼이 표시됨
 %>
-                        <button class="profile-button">프로필 편집</button>&nbsp;
+                        <button class="profile-button"
+                                onclick="location.href='${pageContext.request.contextPath}/profile/profileEditPage.jsp?user_id=<%=memId %>'">프로필 편집</button>&nbsp;
                         <div class="dropdown">
                             <button onclick="dropDown()" class="dropbtn profile-button">&nabla;</button>
                             <div id="myDropdown" class="dropdown-content">
