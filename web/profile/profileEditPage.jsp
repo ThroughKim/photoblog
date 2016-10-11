@@ -1,3 +1,5 @@
+<%@ page import="dbControl.MemberDAO" %>
+<%@ page import="dbControl.MemberDTO" %>
 <%--
   Created by IntelliJ IDEA.
   User: throughkim
@@ -23,6 +25,8 @@
 <%
     }else{
         int memId = (Integer)session.getAttribute("memId");
+        MemberDAO memDao = new MemberDAO();
+        MemberDTO profile = memDao.getProfile(memId);
 %>
 <html>
 <head>
@@ -40,22 +44,22 @@
         </div>
         <div class="profile-edit-main">
             <div class="profile-edit-img-div">
-                <img src="${pageContext.request.contextPath}/images/profile_img.jpg" class="profile-edit-img">
+                <img src="${pageContext.request.contextPath}<%=profile.getProfile_img()%>" class="profile-edit-img">
             </div>
             <div class="profile-edit-content">
                 <form class="profile-edit-form">
                     <br>
                     <p>
                         <label>Nick Name</label><br>
-                        <input type="text" name="username" value="<%=""%>">
+                        <input type="text" name="username" value="<%=profile.getNick()%>">
                     </p>
                     <p>
                         <label>Password</label><br>
-                        <input type="password" name="password" value="<%=""%>">
+                        <input type="password" name="password" value="<%=profile.getPassword()%>">
                     </p>
                     <p>
                         <label>소개</label><br>
-                        <input type="text" name="profile_comment" value="<%=""%>">
+                        <input type="text" name="profile_comment" value="<%=profile.getProfile_comment()%>">
                     </p>
                     <p>
                         <button type="submit" class="profile-img-change-button">제출</button>

@@ -66,6 +66,38 @@ public class MemberDAO {
         return x;
     }
 
+    //프로필 정보 얻어오기
+    public MemberDTO getProfile(int user_id) throws Exception{
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        MemberDTO profile = null;
+
+        try{
+            sql="SELECT * FROM insta.members WHERE id = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, user_id);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                profile = new MemberDTO();
+                profile.setId(rs.getInt("id"));
+                profile.setNick(rs.getString("username"));
+                profile.setPassword("password");
+                profile.setProfile_img(rs.getString("profile_img"));
+                profile.setProfile_comment(rs.getString("profile_comment"));
+            }else{
+                profile = null;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return profile;
+    }
+
     // 프사 얻어오기
     public String getProfileImg(int user_id)throws Exception{
         Connection  con = dbconnect.getConnection();
