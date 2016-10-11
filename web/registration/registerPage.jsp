@@ -35,7 +35,7 @@
             </p>
             <br>
             <p>
-                <input type="submit" id="register-button" value="회원가입">
+                &nbsp;<input type="submit" id="register-button" value="제출">&nbsp;
                 <input type="button" id="register-button" value="취소">
             </p>
         </form>
