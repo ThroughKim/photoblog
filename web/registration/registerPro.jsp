@@ -10,7 +10,7 @@
 
 <%
     request.setCharacterEncoding("UTF-8");
-    String userName = (String)request.getParameter("nick");
+    String userName = request.getParameter("nick");
     String email = (String)request.getParameter("email");
 %>
 

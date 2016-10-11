@@ -256,5 +256,31 @@ public class MemberDAO {
         return checkNum;
     }
 
+    // 회원정보 수정
+    public int updateProfile(MemberDTO member) {
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+
+        int check = -1;
+
+        try{
+            sql="UPDATE insta.members SET username=?, password=?, profile_comment=? WHERE id=?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setString(1, member.getNick());
+            pstmt.setString(2, member.getPassword());
+            pstmt.setString(3, member.getProfile_comment());
+            pstmt.setInt(4, member.getId());
+            pstmt.executeUpdate();
+
+            check = 1;
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return check;
+    }
+
 }
 

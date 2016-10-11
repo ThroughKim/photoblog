@@ -47,11 +47,12 @@
                 <img src="${pageContext.request.contextPath}<%=profile.getProfile_img()%>" class="profile-edit-img">
             </div>
             <div class="profile-edit-content">
-                <form class="profile-edit-form">
+                <form class="profile-edit-form" action=${pageContext.request.contextPath}/profile/profileEditPro.jsp method="post">
+                    <input type="hidden" value="<%=profile.getId()%>" name="id">
                     <br>
                     <p>
                         <label>Nick Name</label><br>
-                        <input type="text" name="username" value="<%=profile.getNick()%>">
+                        <input type="text" name="nick" value="<%=profile.getNick()%>">
                     </p>
                     <p>
                         <label>Password</label><br>
