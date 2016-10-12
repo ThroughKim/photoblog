@@ -16,6 +16,7 @@
 %>
 <jsp:forward page="${pageContext.request.contextPath}/login/loginPage.jsp" />
 <%
+    // 접근방식 체크 본인여부 확인
     }else if(request.getParameter("user_id")==null || request.getParameter("user_id")=="" || Integer.parseInt(request.getParameter("user_id")) != (Integer)session.getAttribute("memId")){
 %>
 <script>
@@ -56,7 +57,7 @@
                     </p>
                     <p>
                         <label>Password</label><br>
-                        <input type="password" name="password" value="<%=profile.getPassword()%>">
+                        <input type="password" name="password" placeholder="비밀번호를 변경하시려면 입력하세요">
                     </p>
                     <p>
                         <label>소개</label><br>

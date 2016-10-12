@@ -19,14 +19,14 @@
     <jsp:setProperty name="member" property="*"/>
 </jsp:useBean>
 <%
-    if(memDao.checkID(username) == 1){
+    if(memDao.changeNickCheck(memid, username) == 1){
 %>
 <script>
     alert("<%=username %> 은/는 이미 사용중인 닉네임입니다.");
     history.go(-1);
 </script>
 <%
-    }else if(memDao.checkID(username) == 0){
+    }else if(memDao.changeNickCheck(memid, username) == 0){
 %>
 <%
         int check = memDao.updateProfile(member);

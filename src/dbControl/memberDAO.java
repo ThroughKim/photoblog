@@ -229,6 +229,38 @@ public class MemberDAO {
         return checkNum;
     }
 
+    //프로필 변경에서 ID중복 체크
+    public int changeNickCheck(int user_id, String nick) throws Exception{
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        int checkNum = -1;
+        String recievedNick = nick;
+
+        try{
+            sql="SELECT username FROM insta.members WHERE id = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, user_id);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                String dbUserName = rs.getString("username");
+                if (dbUserName.equals(recievedNick)){
+                    checkNum = 0;   //유저네임이 중복이지만 자신의 것이므로 오류 없이 통과
+                }else{
+                    checkNum = checkID(recievedNick);   //유저네임이 변경된 경우 checkID method를 사용
+                }
+            }else {
+                checkNum = 1;      //해당 아이디와 유저네임이 존재하지 않으므로 오류
+            }
+        }catch (Exception e){
+
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return checkNum;
+    }
+
     //EMAIL 중복 체크
     public int checkEmail(String email) {
         Connection con = dbconnect.getConnection();
