@@ -57,7 +57,7 @@
                     </p>
                     <p>
                         <label>Password</label><br>
-                        <input type="password" name="password" placeholder="비밀번호를 변경하시려면 입력하세요">
+                        <input type="password" name="password" id="passwd" value="<%=profile.getPassword()%>">
                     </p>
                     <p>
                         <label>소개</label><br>

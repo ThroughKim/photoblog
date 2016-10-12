@@ -33,7 +33,7 @@
         if(check == -1){
 %>
 <script>
-    alert("회원정보 수정중 오류가 발생했습니다. <%=member.getId()%>");
+    alert("회원정보 수정중 오류가 발생했습니다.");
     history.go(-1);
 </script>
 <%
