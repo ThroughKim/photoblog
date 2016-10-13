@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: throughkim
-  Date: 2016. 9. 24.
-  Time: 오후 8:31
+  Date: 2016. 10. 13.
+  Time: 오후 8:06
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8"%>
@@ -14,45 +14,55 @@
 <%@ page import="java.util.List" %>
 
 <%  //로그인 체크
-  if(session.getAttribute("memId") ==null){
+    if(session.getAttribute("memId") ==null){
 %>
-      <jsp:forward page="${pageContext.request.contextPath}/login/loginPage.jsp" />
+<jsp:forward page="${pageContext.request.contextPath}/login/loginPage.jsp" />
 <%
-  }
+    }
 %>
 <html>
 <head>
-  <title>Insta</title>
-  <link href="assets/css/css_main.css" rel="stylesheet" type="text/css">
-  <meta charset="utf-8">
+    <title>Insta</title>
+    <link href="assets/css/css_main.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <script>
+        $(function() {
+            $(window).unload(function() {
+                var scrollPosition = $("div#element").scrollTop();
+                localStorage.setItem("scrollPosition", scrollPosition);
+            });
+            if(localStorage.scrollPosition) {
+                $("div#element").scrollTop(localStorage.getItem("scrollPosition"));
+            }
+        });
+    </script>
 </head>
 <body>
 
 <jsp:include page="${pageContext.request.contextPath}/mainMenu.jsp" flush="false"></jsp:include>
 <%
-    int memId = (Integer)session.getAttribute("memId");
     List<PostDTO> postList = null;
     PostDAO postDao = new PostDAO();
-    postList = postDao.getFollwersPost(memId);
+    postList = postDao.getTotalList();
 
     MemberDAO memDao = new MemberDAO();
 %>
 <div class="content-area">
 
-<%
-    for(int i=0; i<postList.size(); i++){
-        PostDTO post = postList.get(i);
+    <%
+        for(int i=0; i<postList.size(); i++){
+            PostDTO post = postList.get(i);
 
-        List<CommentDTO> commentList = null;
-        CommentDAO commentDAO = new CommentDAO();
-        commentList = commentDAO.getList(post.getId());
+            List<CommentDTO> commentList = null;
+            CommentDAO commentDAO = new CommentDAO();
+            commentList = commentDAO.getList(post.getId());
 
-        int userId = post.getUser_id();
-        String postImg = post.getImage();
-        int cntLike = post.getCnt_like();
-        String content = post.getContent();
-        int postId = post.getId();
-%>
+            int userId = post.getUser_id();
+            String postImg = post.getImage();
+            int cntLike = post.getCnt_like();
+            String content = post.getContent();
+            int postId = post.getId();
+    %>
     <div class="post-box">
         <p class="post-top">
             <img src="${pageContext.request.contextPath}<%=memDao.getProfileImg(userId) %>" class="post-profile-img">
@@ -75,16 +85,16 @@
                 </a>
             </p>
             <p class="post-comment">
-<%
-    for(int j=0; j<commentList.size(); j++){
-        CommentDTO comment = commentList.get(j);
-%>
+                <%
+                    for(int j=0; j<commentList.size(); j++){
+                        CommentDTO comment = commentList.get(j);
+                %>
                 <b><a href="${pageContext.request.contextPath}/profile/profilePage.jsp?user_id=<%=comment.getUser_id()%>">
                     <%=memDao.getUsername(comment.getUser_id()) %></b> <%=comment.getContent() %>
                 </a><br>
-<%
-    }
-%>
+                <%
+                    }
+                %>
             </p>
             <hr>
             <div class="post-input">
@@ -97,9 +107,9 @@
             </div>
         </div>
     </div>
-<%
-    }
-%>
+    <%
+        }
+    %>
 
 </div>
 </body>

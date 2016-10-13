@@ -25,6 +25,17 @@
   <title>Insta</title>
   <link href="assets/css/css_main.css" rel="stylesheet" type="text/css">
   <meta charset="utf-8">
+    <script>
+        $(function() {
+            $(window).unload(function() {
+                var scrollPosition = $("div#element").scrollTop();
+                localStorage.setItem("scrollPosition", scrollPosition);
+            });
+            if(localStorage.scrollPosition) {
+                $("div#element").scrollTop(localStorage.getItem("scrollPosition"));
+            }
+        });
+    </script>
 </head>
 <body>
 
@@ -104,3 +115,7 @@
 </div>
 </body>
 </html>
+
+<%
+    
+%>

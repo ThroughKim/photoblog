@@ -18,7 +18,7 @@
               </form>
           </span>
     <span>
-        <a href="${pageContext.request.contextPath}/index.jsp">
+        <a href="${pageContext.request.contextPath}/totalPostView.jsp">
             <img src="${pageContext.request.contextPath}/assets/icons/explore.png">
         </a>
         <a href="${pageContext.request.contextPath}/profile/profilePage.jsp?user_id=<%=session.getAttribute("memId")%>">

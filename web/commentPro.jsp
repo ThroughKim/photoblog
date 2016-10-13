@@ -23,7 +23,7 @@
 
 <script>
     alert("댓글이 정상적으로 등록되었습니다.");
-    location.href="${pageContext.request.contextPath}/index.jsp";
+    location.href = document.referrer;
 </script>
 <%
     }else if(check==0){
