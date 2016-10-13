@@ -323,7 +323,6 @@ public class MemberDAO {
         int userId = user_id;
         String imagePath = "/images/" + image;
 
-
         try {
             sql = "UPDATE insta.members SET profile_img=? WHERE id = ?";
             pstmt = con.prepareStatement(sql);

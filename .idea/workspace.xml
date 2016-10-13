@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11e51217-6b63-409e-a857-f1c045503d08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/profile/profileImageUpload.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/profile/profileImageUploadPro.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/photoblog/dbControl/memberDAO.class" afterPath="$PROJECT_DIR$/out/production/photoblog/dbControl/memberDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/MemberDAO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/MemberDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/PostDAO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/PostDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dbControl/memberDAO.java" afterPath="$PROJECT_DIR$/src/dbControl/memberDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/assets/css/css_main.css" afterPath="$PROJECT_DIR$/web/assets/css/css_main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/profile/profileEditPage.jsp" afterPath="$PROJECT_DIR$/web/profile/profileEditPage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/profile/profilePage.jsp" afterPath="$PROJECT_DIR$/web/profile/profilePage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/profile/profilePageBackup.jsp" afterPath="$PROJECT_DIR$/web/profile/profilePageBackup.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dbControl/memberDAO.java" afterPath="$PROJECT_DIR$/src/dbControl/MemberDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dbControl/memberDTO.java" afterPath="$PROJECT_DIR$/src/dbControl/MemberDTO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dbControl/postDAO.java" afterPath="$PROJECT_DIR$/src/dbControl/PostDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dbControl/postDTO.java" afterPath="$PROJECT_DIR$/src/dbControl/PostDTO.java" />
     </list>
     <ignored path="photoblog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,24 +30,26 @@
       <file leaf-file-name="MemberDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dbControl/MemberDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="325" column="0" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1476354355000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
-                <marker date="1476354355000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
-                <marker date="1476354355000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
-                <marker date="1476354355000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
-                <marker date="1476354355000" expanded="true" signature="2123:2163" ph="SELECT * FRO... members" />
-                <marker date="1476354355000" expanded="true" signature="3170:3220" ph="SELECT profi... members" />
-                <marker date="1476354355000" expanded="true" signature="3957:4004" ph="SELECT usern... members" />
-                <marker date="1476354355000" expanded="true" signature="4711:4765" ph="SELECT profi... members" />
-                <marker date="1476354355000" expanded="true" signature="5494:5538" ph="SELECT id fr... members" />
-                <marker date="1476354355000" expanded="true" signature="6231:6277" ph="SELECT * FRO... members" />
-                <marker date="1476354355000" expanded="true" signature="7033:7080" ph="SELECT usern... members" />
-                <marker date="1476354355000" expanded="true" signature="8059:8102" ph="SELECT * FRO... members" />
-                <marker date="1476354355000" expanded="true" signature="8760:8837" ph="UPDATE insta... " />
-                <marker date="1476354355000" expanded="true" signature="9641:9692" ph="UPDATE insta... " />
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#286#287#0" expanded="true" />
+                <marker date="1476356277000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
+                <marker date="1476356277000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
+                <marker date="1476356277000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
+                <marker date="1476356277000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
+                <marker date="1476356277000" expanded="true" signature="2123:2163" ph="SELECT * FRO... members" />
+                <marker date="1476356277000" expanded="true" signature="3170:3220" ph="SELECT profi... members" />
+                <marker date="1476356277000" expanded="true" signature="3957:4004" ph="SELECT usern... members" />
+                <marker date="1476356277000" expanded="true" signature="4711:4765" ph="SELECT profi... members" />
+                <marker date="1476356277000" expanded="true" signature="5494:5538" ph="SELECT id fr... members" />
+                <marker date="1476356277000" expanded="true" signature="6231:6277" ph="SELECT * FRO... members" />
+                <marker date="1476356277000" expanded="true" signature="7033:7080" ph="SELECT usern... members" />
+                <marker date="1476356277000" expanded="true" signature="8059:8102" ph="SELECT * FRO... members" />
+                <marker date="1476356277000" expanded="true" signature="8760:8837" ph="UPDATE insta... " />
+                <marker date="1476356277000" expanded="true" signature="9640:9691" ph="UPDATE insta... " />
               </folding>
             </state>
           </provider>
@@ -67,10 +61,10 @@
             <state relative-caret-position="375">
               <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
-                <marker date="1476355976000" expanded="true" signature="704:745" ph="SELECT * FRO... post" />
-                <marker date="1476355976000" expanded="true" signature="1848:1885" ph="SELECT * FRO... post" />
-                <marker date="1476355976000" expanded="true" signature="2848:2907" ph="SELECT * FRO... post" />
-                <marker date="1476355976000" expanded="true" signature="4032:4093" ph="INSERT INTO insta.post... " />
+                <marker date="1476356109000" expanded="true" signature="704:745" ph="SELECT * FRO... post" />
+                <marker date="1476356109000" expanded="true" signature="1848:1885" ph="SELECT * FRO... post" />
+                <marker date="1476356109000" expanded="true" signature="2848:2907" ph="SELECT * FRO... post" />
+                <marker date="1476356109000" expanded="true" signature="4032:4093" ph="INSERT INTO insta.post... " />
               </folding>
             </state>
           </provider>
@@ -177,7 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/login/login.jsp" />
         <option value="$PROJECT_DIR$/src/dbControl/VO.java" />
         <option value="$PROJECT_DIR$/src/dbControl/DBClose.java" />
         <option value="$PROJECT_DIR$/src/dbControl/DTO.java" />
@@ -224,10 +217,11 @@
         <option value="$PROJECT_DIR$/web/profile/profileIamgeUploadPro.jsp" />
         <option value="$PROJECT_DIR$/web/postEdit/imageSelectPage.jsp" />
         <option value="$PROJECT_DIR$/web/profile/profileImageUpload.jsp" />
-        <option value="$PROJECT_DIR$/src/dbControl/MemberDAO.java" />
         <option value="$PROJECT_DIR$/web/profile/profileImageUploadPro.jsp" />
         <option value="$PROJECT_DIR$/web/profile/profilePage.jsp" />
         <option value="$PROJECT_DIR$/src/dbControl/PostDAO.java" />
+        <option value="$PROJECT_DIR$/src/dbControl/MemberDAO.java" />
+        <option value="$PROJECT_DIR$/src/dbControl/memberDAO.java" />
       </list>
     </option>
   </component>
@@ -1020,16 +1014,16 @@
       <workItem from="1475042955246" duration="38853000" />
       <workItem from="1475479016491" duration="25189000" />
       <workItem from="1475562497510" duration="13915000" />
-      <workItem from="1475729868791" duration="28579000" />
+      <workItem from="1475729868791" duration="28796000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106536000" />
+    <option name="totallyTimeSpent" value="106753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
@@ -1045,7 +1039,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49468893" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.49468893" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1149,20 +1143,22 @@
           <caret line="192" column="29" selection-start-line="192" selection-start-column="29" selection-end-line="192" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1476354355000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
-            <marker date="1476354355000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
-            <marker date="1476354355000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
-            <marker date="1476354355000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
-            <marker date="1476354355000" expanded="true" signature="2123:2163" ph="SELECT * FRO... members" />
-            <marker date="1476354355000" expanded="true" signature="3170:3220" ph="SELECT profi... members" />
-            <marker date="1476354355000" expanded="true" signature="3957:4004" ph="SELECT usern... members" />
-            <marker date="1476354355000" expanded="true" signature="4711:4765" ph="SELECT profi... members" />
-            <marker date="1476354355000" expanded="true" signature="5494:5538" ph="SELECT id fr... members" />
-            <marker date="1476354355000" expanded="true" signature="6231:6277" ph="SELECT * FRO... members" />
-            <marker date="1476354355000" expanded="true" signature="7033:7080" ph="SELECT usern... members" />
-            <marker date="1476354355000" expanded="true" signature="8059:8102" ph="SELECT * FRO... members" />
-            <marker date="1476354355000" expanded="true" signature="8760:8837" ph="UPDATE insta... " />
-            <marker date="1476354355000" expanded="true" signature="9641:9692" ph="UPDATE insta... " />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <marker date="1476356277000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
+            <marker date="1476356277000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
+            <marker date="1476356277000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
+            <marker date="1476356277000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
+            <marker date="1476356277000" expanded="true" signature="2123:2163" ph="SELECT * FRO... members" />
+            <marker date="1476356277000" expanded="true" signature="3170:3220" ph="SELECT profi... members" />
+            <marker date="1476356277000" expanded="true" signature="3957:4004" ph="SELECT usern... members" />
+            <marker date="1476356277000" expanded="true" signature="4711:4765" ph="SELECT profi... members" />
+            <marker date="1476356277000" expanded="true" signature="5494:5538" ph="SELECT id fr... members" />
+            <marker date="1476356277000" expanded="true" signature="6231:6277" ph="SELECT * FRO... members" />
+            <marker date="1476356277000" expanded="true" signature="7033:7080" ph="SELECT usern... members" />
+            <marker date="1476356277000" expanded="true" signature="8059:8102" ph="SELECT * FRO... members" />
+            <marker date="1476356277000" expanded="true" signature="8760:8837" ph="UPDATE insta... " />
+            <marker date="1476356277000" expanded="true" signature="9640:9691" ph="UPDATE insta... " />
           </folding>
         </state>
       </provider>
@@ -1174,8 +1170,8 @@
           <folding>
             <element signature="e#346#347#0" expanded="false" />
             <element signature="e#389#390#0" expanded="false" />
-            <marker date="1475473335000" expanded="true" signature="670:730" ph="SELECT * FRO... comment" />
-            <marker date="1475473335000" expanded="true" signature="1807:1873" ph="INSERT INTO insta.comment... " />
+            <marker date="1476356109000" expanded="true" signature="670:730" ph="SELECT * FRO... comment" />
+            <marker date="1476356109000" expanded="true" signature="1807:1873" ph="INSERT INTO insta.comment... " />
           </folding>
         </state>
       </provider>
@@ -1219,8 +1215,8 @@
           <folding>
             <element signature="e#346#347#0" expanded="false" />
             <element signature="e#389#390#0" expanded="false" />
-            <marker date="1475473335000" expanded="true" signature="670:730" ph="SELECT * FRO... comment" />
-            <marker date="1475473335000" expanded="true" signature="1807:1873" ph="INSERT INTO insta.comment... " />
+            <marker date="1476356109000" expanded="true" signature="670:730" ph="SELECT * FRO... comment" />
+            <marker date="1476356109000" expanded="true" signature="1807:1873" ph="INSERT INTO insta.comment... " />
           </folding>
         </state>
       </provider>
@@ -1333,10 +1329,10 @@
           <caret line="84" column="13" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1475759287000" expanded="true" signature="559:618" ph="INSERT INTO insta.follow... " />
-            <marker date="1475759287000" expanded="true" signature="1210:1252" ph="DELETE FROM " />
-            <marker date="1475759287000" expanded="true" signature="1210:1273" ph="DELETE FROM " />
-            <marker date="1475759287000" expanded="true" signature="1916:1981" ph="SELECT * FRO... follow" />
+            <marker date="1476356109000" expanded="true" signature="559:618" ph="INSERT INTO insta.follow... " />
+            <marker date="1476356109000" expanded="true" signature="1210:1252" ph="DELETE FROM " />
+            <marker date="1476356109000" expanded="true" signature="1210:1273" ph="DELETE FROM " />
+            <marker date="1476356109000" expanded="true" signature="1916:1981" ph="SELECT * FRO... follow" />
           </folding>
         </state>
       </provider>
@@ -1450,10 +1446,10 @@
         <state relative-caret-position="375">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <marker date="1476355976000" expanded="true" signature="704:745" ph="SELECT * FRO... post" />
-            <marker date="1476355976000" expanded="true" signature="1848:1885" ph="SELECT * FRO... post" />
-            <marker date="1476355976000" expanded="true" signature="2848:2907" ph="SELECT * FRO... post" />
-            <marker date="1476355976000" expanded="true" signature="4032:4093" ph="INSERT INTO insta.post... " />
+            <marker date="1476356109000" expanded="true" signature="704:745" ph="SELECT * FRO... post" />
+            <marker date="1476356109000" expanded="true" signature="1848:1885" ph="SELECT * FRO... post" />
+            <marker date="1476356109000" expanded="true" signature="2848:2907" ph="SELECT * FRO... post" />
+            <marker date="1476356109000" expanded="true" signature="4032:4093" ph="INSERT INTO insta.post... " />
           </folding>
         </state>
       </provider>
@@ -1476,24 +1472,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dbControl/MemberDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="325" column="0" selection-start-line="325" selection-start-column="0" selection-end-line="325" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1476354355000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
-            <marker date="1476354355000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
-            <marker date="1476354355000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
-            <marker date="1476354355000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
-            <marker date="1476354355000" expanded="true" signature="2123:2163" ph="SELECT * FRO... members" />
-            <marker date="1476354355000" expanded="true" signature="3170:3220" ph="SELECT profi... members" />
-            <marker date="1476354355000" expanded="true" signature="3957:4004" ph="SELECT usern... members" />
-            <marker date="1476354355000" expanded="true" signature="4711:4765" ph="SELECT profi... members" />
-            <marker date="1476354355000" expanded="true" signature="5494:5538" ph="SELECT id fr... members" />
-            <marker date="1476354355000" expanded="true" signature="6231:6277" ph="SELECT * FRO... members" />
-            <marker date="1476354355000" expanded="true" signature="7033:7080" ph="SELECT usern... members" />
-            <marker date="1476354355000" expanded="true" signature="8059:8102" ph="SELECT * FRO... members" />
-            <marker date="1476354355000" expanded="true" signature="8760:8837" ph="UPDATE insta... " />
-            <marker date="1476354355000" expanded="true" signature="9641:9692" ph="UPDATE insta... " />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <marker date="1476356277000" expanded="true" signature="494:520" ph="INSERT INTO insta.members... " />
+            <marker date="1476356277000" expanded="true" signature="494:546" ph="INSERT INTO insta.members... " />
+            <marker date="1476356277000" expanded="true" signature="494:560" ph="INSERT INTO insta.members... " />
+            <marker date="1476356277000" expanded="true" signature="1232:1282" ph="SELECT passw... members" />
+            <marker date="1476356277000" expanded="true" signature="2123:2163" ph="SELECT * FRO... members" />
+            <marker date="1476356277000" expanded="true" signature="3170:3220" ph="SELECT profi... members" />
+            <marker date="1476356277000" expanded="true" signature="3957:4004" ph="SELECT usern... members" />
+            <marker date="1476356277000" expanded="true" signature="4711:4765" ph="SELECT profi... members" />
+            <marker date="1476356277000" expanded="true" signature="5494:5538" ph="SELECT id fr... members" />
+            <marker date="1476356277000" expanded="true" signature="6231:6277" ph="SELECT * FRO... members" />
+            <marker date="1476356277000" expanded="true" signature="7033:7080" ph="SELECT usern... members" />
+            <marker date="1476356277000" expanded="true" signature="8059:8102" ph="SELECT * FRO... members" />
+            <marker date="1476356277000" expanded="true" signature="8760:8837" ph="UPDATE insta... " />
+            <marker date="1476356277000" expanded="true" signature="9640:9691" ph="UPDATE insta... " />
           </folding>
         </state>
       </provider>
