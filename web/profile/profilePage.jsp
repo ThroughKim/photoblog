@@ -109,7 +109,7 @@
 <%
         List<PostDTO> postList = null;
         PostDAO postDao = new PostDAO();
-        postList = postDao.getTotalList(requestedUserId);
+        postList = postDao.getList(requestedUserId);
 
 %>
 

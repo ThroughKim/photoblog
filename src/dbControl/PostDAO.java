@@ -91,7 +91,7 @@ public class PostDAO {
     }
 
     //요청 유저의 게시물만 불러오기
-    public List<PostDTO> getTotalList(int user_id) throws Exception{
+    public List<PostDTO> getList(int user_id) throws Exception{
         Connection con = dbconnect.getConnection();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
