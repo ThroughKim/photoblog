@@ -1,5 +1,3 @@
-<%@ page import="dbControl.MemberDAO" %>
-<%@ page import="dbControl.MemberDTO" %>
 <%--
   Created by IntelliJ IDEA.
   User: throughkim
@@ -8,6 +6,8 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="dbControl.MemberDAO" %>
+<%@ page import="dbControl.MemberDTO" %>
 
 <%
     request.setCharacterEncoding("UTF-8");
@@ -40,12 +40,14 @@
     <div class="profile-edit-box">
         <div class="profile-edit-header">
             <h1>프로필 편집</h1>
-            <p>프로필 사진을 클릭해서 사진을 변경할 수 있습니다.</p>
+            <p class="align-right-header-font">프로필 사진을 클릭해서 사진을 변경할 수 있습니다.</p>
             <hr>
         </div>
         <div class="profile-edit-main">
             <div class="profile-edit-img-div">
-                <img src="${pageContext.request.contextPath}<%=profile.getProfile_img()%>" class="profile-edit-img">
+                <a href="${pageContext.request.contextPath}/profile/profileImageUpload.jsp?user_id=<%=memId%>">
+                    <img src="${pageContext.request.contextPath}<%=profile.getProfile_img()%>" class="profile-edit-img">
+                </a>
             </div>
             <div class="profile-edit-content">
                 <form class="profile-edit-form" action=${pageContext.request.contextPath}/profile/profileEditPro.jsp method="post">

@@ -314,5 +314,33 @@ public class MemberDAO {
         return check;
     }
 
+    //프로필 사진 수정
+    public int updateProfileImage(int user_id, String image) throws Exception{
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+
+        int check = -1;
+        int userId = user_id;
+        String imagePath = "/images/" + image;
+
+
+        try {
+            sql = "UPDATE insta.members SET profile_img=? WHERE id = ?";
+            pstmt = con.prepareStatement(sql);
+
+            pstmt.setString(1, imagePath);
+            pstmt.setInt(2, userId);
+            pstmt.executeUpdate();
+
+            check = 1;
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return check;
+    }
+
 }
 

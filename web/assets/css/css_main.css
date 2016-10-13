@@ -579,13 +579,6 @@ body{
     font-size: larger;
 }
 
-.profile-edit-header > p{
-    margin: 0 0;
-    font-size: small;
-    color: #999999;
-    text-align: right;
-}
-
 .profile-edit-header > hr{
     width: 100%;
     border: none;
@@ -604,6 +597,14 @@ body{
     -webkit-box-flex: 1;
     flex-grow: 1;
     padding-top: 2em;
+}
+
+.profile-edit-img-div > a{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
 }
 
 .profile-edit-img{
@@ -655,4 +656,11 @@ body{
     border-bottom: solid 1.5px #d3d3d3;
     width: 80%;
     margin-left: 1em;
+}
+
+.align-right-header-font{
+    margin: 0 0;
+    font-size: small;
+    color: #999999;
+    text-align: right;
 }

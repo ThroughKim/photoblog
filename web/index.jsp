@@ -32,7 +32,7 @@
 <%
     List<PostDTO> postList = null;
     PostDAO postDao = new PostDAO();
-    postList = postDao.getList();
+    postList = postDao.getTotalList();
 
     MemberDAO memDao = new MemberDAO();
 %>

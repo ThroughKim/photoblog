@@ -109,18 +109,23 @@
 <%
         List<PostDTO> postList = null;
         PostDAO postDao = new PostDAO();
-        postList = postDao.getList(requestedUserId);
+        postList = postDao.getTotalList(requestedUserId);
 
 %>
 
         <div class="profile-posts">
+<%
+        for(int i=0; i<postList.size(); i+=3){
+%>
             <div class="profile-posts-row">
 <%
-        for(int i=0; i<postList.size(); i++){
+            for(int j = i; j < i+3; j++){
+                if(j<postList.size()){
+                    PostDTO post = postList.get(j);
 
-            PostDTO post = postList.get(i);
-            String postImg = post.getImage();
-            int postId = post.getId();
+                    int userId = post.getUser_id();
+                    String postImg = post.getImage();
+                    int postId = post.getId();
 %>
                 <div class="profile-post">
                     <a href="${pageContext.request.contextPath}/singlePostView.jsp?post_id=<%=postId %>">
@@ -128,9 +133,13 @@
                     </a>
                 </div>
 <%
-        }
+                }
+            }
 %>
             </div>
+<%
+        }
+%>
         </div>
     </div>
 
