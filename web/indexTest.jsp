@@ -22,20 +22,9 @@
 %>
 <html>
 <head>
-  <title>Insta</title>
-  <link href="assets/css/css_main.css" rel="stylesheet" type="text/css">
-  <meta charset="utf-8">
-    <script>
-        $(function() {
-            $(window).unload(function() {
-                var scrollPosition = $("div#element").scrollTop();
-                localStorage.setItem("scrollPosition", scrollPosition);
-            });
-            if(localStorage.scrollPosition) {
-                $("div#element").scrollTop(localStorage.getItem("scrollPosition"));
-            }
-        });
-    </script>
+    <title>Insta</title>
+    <link href="assets/css/css_main.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
 </head>
 <body>
 
@@ -91,7 +80,7 @@
         CommentDTO comment = commentList.get(j);
 %>
                 <b><a href="${pageContext.request.contextPath}/profile/profilePage.jsp?user_id=<%=comment.getUser_id()%>">
-                    <%=memDao.getUsername(comment.getUser_id()) %></b> <%=comment.getContent() %>
+                    <%=memDao.getUsername(comment.getUser_id()) %> </b> <%=comment.getContent() %>
                 </a><br>
 <%
     }
@@ -100,7 +89,7 @@
             <hr>
             <div class="post-input">
                 <img src="${pageContext.request.contextPath}/assets/icons/like_colored.png">
-                <form action="commentPro.jsp" method="post">
+                <form method="post">
                     <input type="text" placeholder="댓글 달기..." class="post-input-comment-box comment-placeholder" name="content">
                     <input type="hidden" name="post_id" value="<%=postId %>">
                     <input type="hidden" name="user_id" value="<%=session.getAttribute("memId")%>">
@@ -115,7 +104,16 @@
 </div>
 </body>
 </html>
-
+<script>
+    var currentScroll = $(window).scrollTop();
+    window.location = 'http://example.com#' + currentScroll;
+</script>
 <%
-    
+    if(request.getParameter("content")!=null || request.getParameter("content") != ""){
+        int recievedPostId = Integer.parseInt(request.getParameter("post_id"));
+        int recievedUserId = Integer.parseInt(request.getParameter("user_id"));
+        String recievedCommentContent = request.getParameter("content");
+
+        out.print(recievedCommentContent);
+    }
 %>
