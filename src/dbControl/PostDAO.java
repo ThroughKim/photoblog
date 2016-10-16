@@ -194,4 +194,26 @@ public class PostDAO {
         return check;
     }
 
+    //게시물 삭제
+    public int deletePost(int post_id) throws Exception{
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        int check = 0;
+
+        try{
+            sql="DELETE FROM insta.post WHERE id = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, post_id);
+
+            pstmt.executeUpdate();
+
+            check = 1;
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+        return check;
+    }
+
 }

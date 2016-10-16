@@ -30,6 +30,7 @@
     }else{
         request.setCharacterEncoding("UTF-8");
         int postId = Integer.parseInt(request.getParameter("post_id"));
+        int memId = (Integer)session.getAttribute("memId");
 %>
 
 <html>
@@ -52,6 +53,7 @@
         String postImg = post.getImage();
         int cntLike = post.getCnt_like();
         String content = post.getContent();
+        boolean myPost = userId == memId;
 
         List<CommentDTO> commentList = null;
         CommentDAO commentDAO = new CommentDAO();
@@ -95,6 +97,17 @@
             </div>
         </div>
     </div>
+<%
+        if(myPost == true){
+%>
+    <div class="delete-button-div">
+        <button class="post-delete-button" onclick="location.href='${pageContext.request.contextPath}/postEdit/deletePost.jsp?post_id=<%=postId%>'">
+            삭제
+        </button>
+    </div>
+<%
+        }
+%>
 
 </div>
 </body>
