@@ -185,6 +185,8 @@ public class PostDAO {
 
             pstmt.executeUpdate();
 
+            insertHashTag(content);
+
             check = 1;
         } catch (Exception e) {
             e.printStackTrace();
@@ -192,6 +194,41 @@ public class PostDAO {
             DBClose.close(con, pstmt);
         }
         return check;
+    }
+
+    public void insertHashTag(String content){
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        HashTagGenerator hash = new HashTagGenerator();
+        String url = "/hashPostView.jsp?hash=";
+        ResultSet rs = null;
+
+        try{
+            sql = "SELECT id, content FROM insta.post WHERE content = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setString(1, content);
+
+            pstmt.executeUpdate();
+
+            if(rs.next()){
+                String oldContent = rs.getString("content");
+                int postId = rs.getInt("id");
+                String newContent = hash.setAutoLinkHashTag(url, oldContent, postId);
+
+                sql = "UPDATE insta.post SET content = ? WHERE id = ?";
+                pstmt = con.prepareStatement(sql);
+
+                pstmt.setString(1, newContent);
+                pstmt.setInt(2, postId);
+
+                pstmt.executeUpdate();
+            }
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
     }
 
     //게시물 삭제

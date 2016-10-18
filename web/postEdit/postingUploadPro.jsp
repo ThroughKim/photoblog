@@ -9,6 +9,8 @@
 <%@ page import="dbControl.*" %>
 
 <%
+    HashTagGenerator hashGene = new HashTagGenerator();
+
     request.setCharacterEncoding("UTF-8");
     String image = request.getParameter("image");
     String content = request.getParameter("content");

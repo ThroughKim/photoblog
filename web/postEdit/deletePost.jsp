@@ -26,7 +26,7 @@
     }else if(checkNum == 1){
 %>
     <script>
-        alert("포스팅이 삭제되었습니다.);
+        alert("포스팅이 삭제되었습니다.");
         location.href="${pageContext.request.contextPath}/index.jsp"
     </script>
 <%
