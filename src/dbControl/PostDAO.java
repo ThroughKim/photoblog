@@ -250,6 +250,12 @@ public class PostDAO {
 
             pstmt.executeUpdate();
 
+            sql="DELETE FROM insta.comment WHERE post_id=?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, post_id);
+
+            pstmt.executeUpdate();
+
             check = 1;
         }catch (Exception e){
             e.printStackTrace();
