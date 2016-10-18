@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11e51217-6b63-409e-a857-f1c045503d08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/PostDAO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/PostDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dbControl/PostDAO.java" afterPath="$PROJECT_DIR$/src/dbControl/PostDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/hashPostView.jsp" afterPath="$PROJECT_DIR$/web/hashPostView.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/singlePostView.jsp" afterPath="$PROJECT_DIR$/web/singlePostView.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/totalPostView.jsp" afterPath="$PROJECT_DIR$/web/totalPostView.jsp" />
     </list>
     <ignored path="photoblog.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,19 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HashTagGenerator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dbControl/HashTagGenerator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#404#412#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="PostDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dbControl/PostDAO.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -106,8 +93,8 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="105" column="7" selection-start-line="31" selection-start-column="0" selection-end-line="105" selection-end-column="7" />
+            <state relative-caret-position="351">
+              <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -123,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mainMenu.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mainMenu.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/mainMenu.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+            <state relative-caret-position="315">
+              <caret line="21" column="82" selection-start-line="21" selection-start-column="82" selection-end-line="21" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -136,18 +123,28 @@
       <file leaf-file-name="singlePostView.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/singlePostView.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="33" selection-end-column="2" />
+            <state relative-caret-position="366">
+              <caret line="90" column="78" selection-start-line="90" selection-start-column="78" selection-end-line="90" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deletePost.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/postEdit/deletePost.jsp">
+      <file leaf-file-name="totalPostView.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/totalPostView.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="34" column="2" selection-start-line="34" selection-start-column="2" selection-end-line="34" selection-end-column="2" />
+            <state relative-caret-position="291">
+              <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="indexTest.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/indexTest.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -208,13 +205,10 @@
         <option value="$PROJECT_DIR$/src/dbControl/memberDAO.java" />
         <option value="$PROJECT_DIR$/web/profile/profilePage.jsp" />
         <option value="$PROJECT_DIR$/src/dbControl/MemberDTO.java" />
-        <option value="$PROJECT_DIR$/web/mainMenu.jsp" />
         <option value="$PROJECT_DIR$/web/commentPro.jsp" />
-        <option value="$PROJECT_DIR$/web/totalPostView.jsp" />
         <option value="$PROJECT_DIR$/web/assets/js/main_js.js" />
         <option value="$PROJECT_DIR$/web/indexTest.jsp" />
         <option value="$PROJECT_DIR$/web/assets/css/css_main.css" />
-        <option value="$PROJECT_DIR$/web/singlePostView.jsp" />
         <option value="$PROJECT_DIR$/src/dbControl/Replacable.java" />
         <option value="$PROJECT_DIR$/src/dbControl/test.java" />
         <option value="$PROJECT_DIR$/web/postEdit/deletePost.jsp" />
@@ -222,9 +216,12 @@
         <option value="$PROJECT_DIR$/src/dbControl/hashDAO.java" />
         <option value="$PROJECT_DIR$/src/dbControl/HashTagGenerator.java" />
         <option value="$PROJECT_DIR$/src/dbControl/HashDAO.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/hashPostView.jsp" />
         <option value="$PROJECT_DIR$/src/dbControl/PostDAO.java" />
+        <option value="$PROJECT_DIR$/web/mainMenu.jsp" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/singlePostView.jsp" />
+        <option value="$PROJECT_DIR$/web/totalPostView.jsp" />
       </list>
     </option>
   </component>
@@ -1008,12 +1005,12 @@
       <workItem from="1475042955246" duration="38853000" />
       <workItem from="1475479016491" duration="25189000" />
       <workItem from="1475562497510" duration="13915000" />
-      <workItem from="1475729868791" duration="46513000" />
+      <workItem from="1475729868791" duration="46897000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124470000" />
+    <option name="totallyTimeSpent" value="124854000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1345,26 +1342,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/totalPostView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/assets/js/main_js.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/indexTest.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -1420,14 +1401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/singlePostView.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="33" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/postEdit/postingEditPage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="396">
@@ -1446,14 +1419,6 @@
             <marker date="1476766802000" expanded="true" signature="1146:1190" ph="INSERT INTO insta.hashtag... " />
             <marker date="1476766802000" expanded="true" signature="1711:1773" ph="INSERT INTO insta.post_hash_rel... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="105" column="7" selection-start-line="31" selection-start-column="0" selection-end-line="105" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,8 +1467,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/mainMenu.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="69" selection-start-line="20" selection-start-column="69" selection-end-line="20" selection-end-column="69" />
+        <state relative-caret-position="315">
+          <caret line="21" column="82" selection-start-line="21" selection-start-column="82" selection-end-line="21" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/indexTest.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="85" column="5" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/singlePostView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="90" column="78" selection-start-line="90" selection-start-column="78" selection-end-line="90" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/totalPostView.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
           <folding />
         </state>
       </provider>

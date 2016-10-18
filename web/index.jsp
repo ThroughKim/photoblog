@@ -80,8 +80,8 @@
         CommentDTO comment = commentList.get(j);
 %>
                 <b><a href="${pageContext.request.contextPath}/profile/profilePage.jsp?user_id=<%=comment.getUser_id()%>">
-                    <%=memDao.getUsername(comment.getUser_id()) %></b> <%=comment.getContent() %>
-                </a><br>
+                    <%=memDao.getUsername(comment.getUser_id()) %></b></a> <%=comment.getContent() %>
+                <br>
 <%
     }
 %>
