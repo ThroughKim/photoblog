@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="11e51217-6b63-409e-a857-f1c045503d08" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/mainMenu.jsp" afterPath="$PROJECT_DIR$/web/mainMenu.jsp" />
-    </list>
+    <list default="true" id="11e51217-6b63-409e-a857-f1c045503d08" name="Default" comment="" />
     <ignored path="photoblog.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1003,12 +1001,12 @@
       <workItem from="1475042955246" duration="38853000" />
       <workItem from="1475479016491" duration="25189000" />
       <workItem from="1475562497510" duration="13915000" />
-      <workItem from="1475729868791" duration="47713000" />
+      <workItem from="1475729868791" duration="47773000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125670000" />
+    <option name="totallyTimeSpent" value="125730000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
