@@ -168,6 +168,48 @@ public class PostDAO {
         return list;
     }
 
+    //해시태그에 해당하는 게시물만 불러오기
+    public List<PostDTO> getHahtagPost(String hash) throws Exception{
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+        List<PostDTO>list = null;
+
+        HashDAO hashDao = new HashDAO();
+        int hashId = hashDao.getHashId(hash);
+
+        try{
+            sql = "SELECT * FROM insta.post " +
+                    "WHERE id in (SELECT post_id FROM insta.post_hash_rel WHERE hash_id = ?)" +
+                    "ORDER BY id DESC";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, hashId);
+
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                list = new ArrayList<PostDTO>();
+
+                do{
+                    PostDTO post = new PostDTO();
+                    post.setId(rs.getInt("id"));
+                    post.setImage(rs.getString("image"));
+                    post.setContent(rs.getString("content"));
+                    post.setUser_id(rs.getInt("user_id"));
+                    post.setCnt_like(rs.getInt("cnt_like"));
+                    list.add(post);
+                }while(rs.next());
+            }else {
+                list = Collections.EMPTY_LIST;
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con,pstmt);
+        }
+        return list;
+    }
+
     //글 입력하기
     public int insertPost(String image, String content, int userId) throws Exception {
         Connection con = dbconnect.getConnection();
