@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="11e51217-6b63-409e-a857-f1c045503d08" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dbControl/HashTagGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dbControl/hashDAO.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/dbControl/hashDAO.java" afterPath="$PROJECT_DIR$/src/dbControl/HashDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/photoblog/dbControl/HashTagGenerator.class" afterPath="$PROJECT_DIR$/out/production/photoblog/dbControl/HashTagGenerator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/photoblog/dbControl/PostDAO.class" afterPath="$PROJECT_DIR$/out/production/photoblog/dbControl/PostDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/HashTagGenerator.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/HashTagGenerator.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/PostDAO.class" afterPath="$PROJECT_DIR$/web/WEB-INF/classes/dbControl/PostDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dbControl/HashTagGenerator.java" afterPath="$PROJECT_DIR$/src/dbControl/HashTagGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dbControl/PostDAO.java" afterPath="$PROJECT_DIR$/src/dbControl/PostDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/postEdit/deletePost.jsp" afterPath="$PROJECT_DIR$/web/postEdit/deletePost.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/postEdit/postingUploadPro.jsp" afterPath="$PROJECT_DIR$/web/postEdit/postingUploadPro.jsp" />
     </list>
     <ignored path="photoblog.iws" />
@@ -31,44 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="postingUploadPro.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/postEdit/postingUploadPro.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PostDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/dbControl/PostDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2070">
-              <caret line="17" column="20" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="20" />
-              <folding>
-                <marker date="1476758232000" expanded="true" signature="704:745" ph="SELECT * FRO... post" />
-                <marker date="1476758232000" expanded="true" signature="1848:1885" ph="SELECT * FRO... post" />
-                <marker date="1476758232000" expanded="true" signature="2843:2902" ph="SELECT * FRO... post" />
-                <marker date="1476758232000" expanded="true" signature="4058:4182" ph="SELECT * FRO... post" />
-                <marker date="1476758232000" expanded="true" signature="4058:4222" ph="SELECT * FRO... post" />
-                <marker date="1476758232000" expanded="true" signature="4058:4264" ph="SELECT * FRO... post" />
-                <marker date="1476758232000" expanded="true" signature="4058:4265" ph="SELECT * FRO... post" />
-                <marker date="1476758232000" expanded="true" signature="4126:4181" ph="SELECT follo... follow" />
-                <marker date="1476758232000" expanded="true" signature="5427:5488" ph="INSERT INTO insta.post... " />
-                <marker date="1476758232000" expanded="true" signature="6221:6273" ph="SELECT id, c... post" />
-                <marker date="1476758232000" expanded="true" signature="6645:6691" ph="UPDATE insta... " />
-                <marker date="1476758232000" expanded="true" signature="7244:7279" ph="DELETE FROM " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="HashTagGenerator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dbControl/HashTagGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="336">
+              <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#404#412#0" expanded="true" />
@@ -77,16 +45,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hashDAO.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/dbControl/hashDAO.java">
+      <file leaf-file-name="PostDAO.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/dbControl/PostDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+            <state relative-caret-position="456">
+              <caret line="250" column="34" selection-start-line="250" selection-start-column="34" selection-end-line="250" selection-end-column="34" />
+              <folding>
+                <marker date="1476766990000" expanded="true" signature="704:745" ph="SELECT * FRO... post" />
+                <marker date="1476766990000" expanded="true" signature="1848:1885" ph="SELECT * FRO... post" />
+                <marker date="1476766990000" expanded="true" signature="2843:2902" ph="SELECT * FRO... post" />
+                <marker date="1476766990000" expanded="true" signature="4058:4182" ph="SELECT * FRO... post" />
+                <marker date="1476766990000" expanded="true" signature="4058:4222" ph="SELECT * FRO... post" />
+                <marker date="1476766990000" expanded="true" signature="4058:4264" ph="SELECT * FRO... post" />
+                <marker date="1476766990000" expanded="true" signature="4058:4265" ph="SELECT * FRO... post" />
+                <marker date="1476766990000" expanded="true" signature="4126:4181" ph="SELECT follo... follow" />
+                <marker date="1476766990000" expanded="true" signature="5427:5488" ph="INSERT INTO insta.post... " />
+                <marker date="1476766990000" expanded="true" signature="6221:6273" ph="SELECT id, c... post" />
+                <marker date="1476766990000" expanded="true" signature="6649:6695" ph="UPDATE insta... " />
+                <marker date="1476766990000" expanded="true" signature="7248:7283" ph="DELETE FROM " />
+                <marker date="1476766990000" expanded="true" signature="7425:7474" ph="DELETE FROM " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HashDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/dbControl/HashDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66">
+              <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1476759375000" expanded="true" signature="514:559" ph="SELECT * FRO... hashtag" />
-                <marker date="1476759375000" expanded="true" signature="1145:1189" ph="INSERT INTO insta.hashtag... " />
+                <marker date="1476766802000" expanded="true" signature="515:560" ph="SELECT * FRO... hashtag" />
+                <marker date="1476766802000" expanded="true" signature="1146:1190" ph="INSERT INTO insta.hashtag... " />
+                <marker date="1476766802000" expanded="true" signature="1711:1773" ph="INSERT INTO insta.post_hash_rel... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="postingUploadPro.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/postEdit/postingUploadPro.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -172,7 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/registration/registerAction.jsp" />
         <option value="$PROJECT_DIR$/src/dbControl/DAO.java" />
         <option value="$PROJECT_DIR$/web/login/loginPage.jsp" />
         <option value="$PROJECT_DIR$/web/logout.jsp" />
@@ -220,9 +222,10 @@
         <option value="$PROJECT_DIR$/src/dbControl/test.java" />
         <option value="$PROJECT_DIR$/web/postEdit/deletePost.jsp" />
         <option value="$PROJECT_DIR$/web/postEdit/postingUploadPro.jsp" />
-        <option value="$PROJECT_DIR$/src/dbControl/PostDAO.java" />
-        <option value="$PROJECT_DIR$/src/dbControl/HashTagGenerator.java" />
         <option value="$PROJECT_DIR$/src/dbControl/hashDAO.java" />
+        <option value="$PROJECT_DIR$/src/dbControl/HashTagGenerator.java" />
+        <option value="$PROJECT_DIR$/src/dbControl/HashDAO.java" />
+        <option value="$PROJECT_DIR$/src/dbControl/PostDAO.java" />
       </list>
     </option>
   </component>
@@ -1042,12 +1045,12 @@
       <workItem from="1475042955246" duration="38853000" />
       <workItem from="1475479016491" duration="25189000" />
       <workItem from="1475562497510" duration="13915000" />
-      <workItem from="1475729868791" duration="42974000" />
+      <workItem from="1475729868791" duration="44756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120931000" />
+    <option name="totallyTimeSpent" value="122713000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1503,16 +1506,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/postEdit/postingUploadPro.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="18" column="63" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dbControl/HashTagGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="336">
+          <caret line="37" column="43" selection-start-line="37" selection-start-column="43" selection-end-line="37" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#404#412#0" expanded="true" />
@@ -1520,35 +1523,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbControl/PostDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/dbControl/HashDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2070">
-          <caret line="17" column="20" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="20" />
+        <state relative-caret-position="66">
+          <caret line="62" column="5" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding>
-            <marker date="1476758232000" expanded="true" signature="704:745" ph="SELECT * FRO... post" />
-            <marker date="1476758232000" expanded="true" signature="1848:1885" ph="SELECT * FRO... post" />
-            <marker date="1476758232000" expanded="true" signature="2843:2902" ph="SELECT * FRO... post" />
-            <marker date="1476758232000" expanded="true" signature="4058:4182" ph="SELECT * FRO... post" />
-            <marker date="1476758232000" expanded="true" signature="4058:4222" ph="SELECT * FRO... post" />
-            <marker date="1476758232000" expanded="true" signature="4058:4264" ph="SELECT * FRO... post" />
-            <marker date="1476758232000" expanded="true" signature="4058:4265" ph="SELECT * FRO... post" />
-            <marker date="1476758232000" expanded="true" signature="4126:4181" ph="SELECT follo... follow" />
-            <marker date="1476758232000" expanded="true" signature="5427:5488" ph="INSERT INTO insta.post... " />
-            <marker date="1476758232000" expanded="true" signature="6221:6273" ph="SELECT id, c... post" />
-            <marker date="1476758232000" expanded="true" signature="6645:6691" ph="UPDATE insta... " />
-            <marker date="1476758232000" expanded="true" signature="7244:7279" ph="DELETE FROM " />
+            <element signature="imports" expanded="true" />
+            <marker date="1476766802000" expanded="true" signature="515:560" ph="SELECT * FRO... hashtag" />
+            <marker date="1476766802000" expanded="true" signature="1146:1190" ph="INSERT INTO insta.hashtag... " />
+            <marker date="1476766802000" expanded="true" signature="1711:1773" ph="INSERT INTO insta.post_hash_rel... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/dbControl/hashDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/dbControl/PostDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="55" column="25" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+        <state relative-caret-position="456">
+          <caret line="250" column="34" selection-start-line="250" selection-start-column="34" selection-end-line="250" selection-end-column="34" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1476759375000" expanded="true" signature="514:559" ph="SELECT * FRO... hashtag" />
-            <marker date="1476759375000" expanded="true" signature="1145:1189" ph="INSERT INTO insta.hashtag... " />
+            <marker date="1476766990000" expanded="true" signature="704:745" ph="SELECT * FRO... post" />
+            <marker date="1476766990000" expanded="true" signature="1848:1885" ph="SELECT * FRO... post" />
+            <marker date="1476766990000" expanded="true" signature="2843:2902" ph="SELECT * FRO... post" />
+            <marker date="1476766990000" expanded="true" signature="4058:4182" ph="SELECT * FRO... post" />
+            <marker date="1476766990000" expanded="true" signature="4058:4222" ph="SELECT * FRO... post" />
+            <marker date="1476766990000" expanded="true" signature="4058:4264" ph="SELECT * FRO... post" />
+            <marker date="1476766990000" expanded="true" signature="4058:4265" ph="SELECT * FRO... post" />
+            <marker date="1476766990000" expanded="true" signature="4126:4181" ph="SELECT follo... follow" />
+            <marker date="1476766990000" expanded="true" signature="5427:5488" ph="INSERT INTO insta.post... " />
+            <marker date="1476766990000" expanded="true" signature="6221:6273" ph="SELECT id, c... post" />
+            <marker date="1476766990000" expanded="true" signature="6649:6695" ph="UPDATE insta... " />
+            <marker date="1476766990000" expanded="true" signature="7248:7283" ph="DELETE FROM " />
+            <marker date="1476766990000" expanded="true" signature="7425:7474" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>

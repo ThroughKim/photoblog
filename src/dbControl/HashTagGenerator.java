@@ -15,7 +15,7 @@ public class HashTagGenerator {
     public static String setAutoLinkHashTag(String url, String content, int postId){
         List<String> list = new ArrayList<String>();
         String pattern = "(?:^|\\s|[\\p{Punct}&&[^/]])(#[\\p{L}0-9-_]+)";
-
+        HashDAO hashDao = new HashDAO();
 
         String strRet = content;
 
@@ -28,7 +28,18 @@ public class HashTagGenerator {
             Collections.sort(list);
             if(list.size() > 0){
                 for(int k = list.size() -1; k >= 0; k--){
-                    strRet = strRet.replaceAll(list.get(k), "<a href='" + url + URLEncoder.encode(list.get(k), "UTF-8") + "'>" + list.get(k) + "</a>");
+                    String hashContent = list.get(k);
+                    strRet = strRet.replaceAll(list.get(k), "<a href='" + url + URLEncoder.encode(hashContent, "UTF-8") + "'>" + hashContent + "</a>");
+                    int hashId = hashDao.getHashId(list.get(k));
+                    if (hashId == 0){
+                        hashDao.insertHash(hashContent);
+                        hashId = hashDao.getHashId(hashContent);
+                        hashDao.makeHashPostRel(hashId, postId);
+                    }else if(hashId == -1){
+                        System.out.print("오류발생");
+                    }else{
+                        hashDao.makeHashPostRel(hashId, postId);
+                    }
                 }
             }
         }catch(Exception ex){

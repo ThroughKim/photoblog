@@ -208,7 +208,7 @@ public class PostDAO {
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1, content);
 
-            pstmt.executeUpdate();
+            rs = pstmt.executeQuery();
 
             if(rs.next()){
                 String oldContent = rs.getString("content");
@@ -239,6 +239,12 @@ public class PostDAO {
 
         try{
             sql="DELETE FROM insta.post WHERE id = ?";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, post_id);
+
+            pstmt.executeUpdate();
+
+            sql="DELETE FROM insta.post_hash_rel WHERE post_id = ?";
             pstmt = con.prepareStatement(sql);
             pstmt.setInt(1, post_id);
 

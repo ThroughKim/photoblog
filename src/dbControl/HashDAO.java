@@ -7,18 +7,18 @@ import java.sql.ResultSet;
 /**
  * Created by throughkim on 2016. 10. 18..
  */
-public class hashDAO {
+public class HashDAO {
     DBConnect dbconnect = null;
     String sql = "";
 
-    public hashDAO() { dbconnect = new DBConnect(); }
+    public HashDAO() { dbconnect = new DBConnect(); }
 
     public int getHashId(String content){
         Connection con = dbconnect.getConnection();
         PreparedStatement pstmt = null;
         ResultSet rs = null;
 
-        int hashId = 0;
+        int hashId = -1;
 
         try {
             sql="SELECT * FROM insta.hashtag WHERE content = ?";
@@ -63,6 +63,25 @@ public class hashDAO {
     }
 
     public int makeHashPostRel(int hashId, int postId){
+        int checkNum = 0;
+        Connection con = dbconnect.getConnection();
+        PreparedStatement pstmt = null;
 
+        try{
+            sql="INSERT INTO insta.post_hash_rel(post_id, hash_id) VALUES (?,?)";
+            pstmt = con.prepareStatement(sql);
+            pstmt.setInt(1, postId);
+            pstmt.setInt(2, hashId);
+
+            pstmt.executeUpdate();
+            checkNum = 1;
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            DBClose.close(con, pstmt);
+        }
+
+        return checkNum;
     }
 }
