@@ -13,8 +13,8 @@
               </a>
           </span>
     <span>
-              <form>
-                  <input type="text" placeholder="검색" class="main-menu-search-box search-placeholder">
+              <form action="${pageContext.request.contextPath}/hashPostView.jsp" method="get" onsubmit="addSharp()" name="search">
+                  <input type="text" placeholder="검색" class="main-menu-search-box search-placeholder" name="hash" id="hash">
               </form>
           </span>
     <span>
@@ -29,3 +29,11 @@
         </a>
     </span>
 </div>
+
+<script>
+    function addSharp(){
+        var hashContent = document.getElementById("hash").value;
+        document.search.hash.value= "#" + hashContent;
+        document.getElementByName("search").submit();
+    }
+</script>
