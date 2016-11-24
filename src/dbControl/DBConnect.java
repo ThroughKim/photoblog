@@ -1,9 +1,7 @@
 package dbControl;
 import java.sql.Connection;
 import java.sql.DriverManager;
-/**
- * Created by throughkim on 2016. 9. 28..
- */
+
 public class DBConnect {
     public DBConnect() {}
 

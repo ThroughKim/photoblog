@@ -7,9 +7,6 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/**
- * Created by throughkim on 2016. 10. 17..
- */
 public class HashTagGenerator {
 
     public static String setAutoLinkHashTag(String url, String content, int postId){
@@ -29,7 +26,12 @@ public class HashTagGenerator {
             if(list.size() > 0){
                 for(int k = list.size() -1; k >= 0; k--){
                     String hashContent = list.get(k);
-                    strRet = strRet.replaceAll(list.get(k), "<a href='" + url + URLEncoder.encode(hashContent, "UTF-8") + "'>" + hashContent + "</a>");
+                    strRet = strRet.replaceAll(
+                            list.get(k),
+                            "<a href='" + url + URLEncoder.encode(hashContent, "UTF-8") + "'>"
+                                + hashContent +
+                            "</a>"
+                    );
                     int hashId = hashDao.getHashId(list.get(k));
                     if (hashId == 0){
                         hashDao.insertHash(hashContent);

@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: throughkim
-  Date: 2016. 10. 3.
-  Time: 오후 4:45
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 
 <!-- 파일 업로드 처리를 위한 MultipartRequest 객체를 임포트 -->

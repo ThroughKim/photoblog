@@ -7,9 +7,6 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ArrayList;
 
-/**
- * Created by throughkim on 2016. 9. 29..
- */
 public class CommentDAO {
     DBConnect dbconnect = null;
     String sql = "";

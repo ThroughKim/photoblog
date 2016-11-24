@@ -22,9 +22,9 @@
 %>
 <html>
 <head>
-  <title>Insta</title>
-  <link href="assets/css/css_main.css" rel="stylesheet" type="text/css">
-  <meta charset="utf-8">
+    <title>Insta</title>
+    <link href="assets/css/css_main.css" rel="stylesheet" type="text/css"/>
+    <meta charset="utf-8">
 </head>
 <body>
 

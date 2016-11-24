@@ -50,7 +50,7 @@ body{
 }
 
 .logo-image{
-    height: 17%;
+    max-height: 55px;
     width: auto;
 }
 

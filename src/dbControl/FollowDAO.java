@@ -5,9 +5,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- * Created by throughkim on 2016. 10. 6..
- */
 public class FollowDAO {
     DBConnect dbConnect = null;
     String sql = "";

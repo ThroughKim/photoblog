@@ -4,9 +4,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-/**
- * Created by throughkim on 2016. 10. 18..
- */
 public class HashDAO {
     DBConnect dbconnect = null;
     String sql = "";

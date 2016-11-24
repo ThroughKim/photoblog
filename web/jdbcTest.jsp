@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: throughkim
-  Date: 2016. 9. 28.
-  Time: 오후 2:38
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import = "java.sql.*" %>                    <!-- JSP에서 JDBC의 객체를 사용하기 위해 java.sql 패키지를 import 한다 -->
 

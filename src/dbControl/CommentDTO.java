@@ -1,8 +1,5 @@
 package dbControl;
 
-/**
- * Created by throughkim on 2016. 9. 29..
- */
 public class CommentDTO {
     private int id;
     private int user_id;

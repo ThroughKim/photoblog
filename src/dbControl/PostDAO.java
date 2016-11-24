@@ -10,9 +10,6 @@ import java.util.Collections;
 
 import dbControl.PostDTO;
 
-/**
- * Created by throughkim on 2016. 9. 28..
- */
 public class PostDAO {
     DBConnect dbconnect = null;
     String sql = "";
