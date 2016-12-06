@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="JAX-WS-Apache Axis">
+    <archive path="/Users/throughkim/Documents/photoblog/lib/jaxrpc.jar" />
+    <archive path="/Users/throughkim/Documents/photoblog/lib/saaj.jar" />
+    <archive path="/Users/throughkim/Documents/photoblog/lib/commons-logging-1.0.4.jar" />
+    <archive path="/Users/throughkim/Documents/photoblog/lib/commons-discovery-0.2.jar" />
+    <archive path="/Users/throughkim/Documents/photoblog/lib/wsdl4j-1.5.1.jar" />
+    <archive path="/Users/throughkim/Documents/photoblog/lib/log4j-1.2.8.jar" />
+    <archive path="/Users/throughkim/Documents/photoblog/lib/axis.jar" />
+    <archive path="/Library/Java/Home/lib/ext/mysql-connector-java-5.1.39-bin.jar" />
+  </library>
+  <library name="cos">
+    <archive path="/Users/throughkim/Documents/photoblog/lib/cos.jar" />
+  </library>
+  <library name="mysql-connector-java-5.1.39-bin">
+    <archive path="/Library/Java/Home/lib/ext/mysql-connector-java-5.1.39-bin.jar" />
+  </library>
+</eclipse-userlibraries>
+

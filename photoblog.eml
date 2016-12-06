@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/photoblog"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="cos.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/cos.jar!/"/>
+	</lib>
+	<lib name="Tomcat 8.5.5" scope="PROVIDED"/>
+	<levels>
+		<level name="JAX-WS-Apache Axis" value="project"/>
+		<level name="mysql-connector-java-5.1.39-bin" value="project"/>
+		<level name="cos" value="project"/>
+		<level name="Tomcat 8.5.5" value="application_server_libraries"/>
+	</levels>
+</component>
