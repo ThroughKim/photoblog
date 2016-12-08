@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Insta</title>
+    <title>Photoblog</title>
     <link href="${pageContext.request.contextPath}/assets/css/css_main.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
 </head>
@@ -9,7 +9,7 @@
 <div class="content-area">
     <div class="login-box">
         <div class="login-greet">
-            Welcome to Insta!
+            Welcome to PhotoBlog!
         </div>
         <div class="login-form">
             <form action="${pageContext.request.contextPath}/login/loginPro.jsp" method="post">
@@ -20,7 +20,7 @@
         </div>
         <div class="regist-recommend">
             <p>
-                아직 Insta의 회원이 아니신가요?
+                아직 회원이 아니신가요?
             </p>
             <a href="../registration/registerPage.jsp">회원가입</a>
         </div>

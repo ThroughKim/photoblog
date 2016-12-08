@@ -89,9 +89,9 @@
                     </span>
                 </div>
                 <div class="profile-stat">
-                    <span>게시물 2개</span>
-                    <span>팔로워 2명</span>
-                    <span>팔로잉 3명</span>
+                    <span>게시물 x개</span>
+                    <span>팔로워 x명</span>
+                    <span>팔로잉 x명</span>
                 </div>
                 <div class="profile-comment">
                     <%= memDao.getProfileComment(requestedUserId) %>
