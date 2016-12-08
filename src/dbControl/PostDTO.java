@@ -1,6 +1,9 @@
 package dbControl;
 
+// PostDAO가 DB의 post테이블의 데이터를 주고받을 때 사용하는 객체
+// 단순히 데이터만을 보관하며 해당 데이터에 대한 getter setter메소드만을 가진다.
 public class PostDTO {
+    // PostDTO가 기본적으로 가지는 데이터들 // private로 선언하여 캡슐화
     private int id;
     private String image;
     private String content;
@@ -12,6 +15,7 @@ public class PostDTO {
 
     }
 
+    // PostDTO객체가 인스턴스화 될 때 다음과 같은 인자들을 전달 받으면 객체의 변수로 설정해준다.
     public PostDTO(int id, String image, String content,
                    int user_id, int cnt_like, String create_datetime){
         this.id = id;
@@ -22,6 +26,7 @@ public class PostDTO {
         this.create_datetime = create_datetime;
     }
 
+    // Getter Setter Methods
     public int getId() {
         return id;
     }
