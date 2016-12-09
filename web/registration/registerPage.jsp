@@ -10,7 +10,7 @@
 <div class="content-area">
     <div class="register-box">
         <h1>회원가입</h1>
-        <p>Insta에 오신것을 환영합니다. 간단한 절차를 통해 회원가입 하셔서 저희 서비스를 이용해보세요.</p>
+        <p>PhotoBlog에 오신것을 환영합니다. 간단한 절차를 통해 회원가입 하셔서 저희 서비스를 이용해보세요.</p>
         <hr>
         <form action="${pageContext.request.contextPath}/registration/registerPro.jsp" method="post" onsubmit="return registerFormCheck();">
             <br>
